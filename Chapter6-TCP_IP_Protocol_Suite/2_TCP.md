@@ -59,3 +59,101 @@ Một gói tin TCP bao gồm nhiều trường, trong đó các trường quan t
 ## Kết luận
 TCP là một giao thức mạnh mẽ và đáng tin cậy cho việc truyền dữ liệu qua mạng. Mặc dù có một số hạn chế, nhưng ưu điểm của TCP trong việc đảm bảo dữ liệu được truyền tải nguyên vẹn và theo đúng thứ tự khiến nó trở thành lựa chọn phổ biến cho nhiều ứng dụng mạng.
 
+## Ví dụ chi tiết về quy trình TCP
+### Thiết lập kết nối (TCP Handshake):
+Giả sử chúng ta có một ứng dụng muốn gửi thông điệp "Hello, World!" từ máy tính A đến máy tính B.
+
+1. **Bước 1: SYN**
+   - Máy A gửi một gói tin SYN (synchronize) đến Máy B.
+   - Các thông số trong gói SYN:
+     - Source Port: 12345
+     - Destination Port: 80
+     - Sequence Number: 1000 (giả định)
+     - ACK Number: 0 (chưa có ACK)
+     - SYN Flag: 1
+
+2. **Bước 2: SYN-ACK**
+   - Máy B nhận được gói SYN và phản hồi lại bằng một gói SYN-ACK.
+   - Các thông số trong gói SYN-ACK:
+     - Source Port: 80
+     - Destination Port: 12345
+     - Sequence Number: 2000 (giả định)
+     - ACK Number: 1001 (Số sequence của gói SYN + 1)
+     - SYN Flag: 1
+     - ACK Flag: 1
+
+3. **Bước 3: ACK**
+   - Máy A nhận được gói SYN-ACK và phản hồi bằng một gói ACK.
+   - Các thông số trong gói ACK:
+     - Source Port: 12345
+     - Destination Port: 80
+     - Sequence Number: 1001
+     - ACK Number: 2001 (Số sequence của gói SYN-ACK + 1)
+     - ACK Flag: 1
+
+Sau khi hoàn tất ba bước này, kết nối TCP được thiết lập và sẵn sàng truyền dữ liệu.
+
+### Truyền Dữ Liệu (TCP Data Transfer):
+Giả sử Máy A muốn gửi thông điệp "Hello, World!" đến Máy B.
+
+1. **Bước 1: Gửi Dữ Liệu**
+   - Máy A gửi gói tin chứa dữ liệu.
+   - Các thông số trong gói dữ liệu:
+     - Source Port: 12345
+     - Destination Port: 80
+     - Sequence Number: 1001
+     - ACK Number: 2001
+     - Data: "Hello, World!"
+     - ACK Flag: 1
+
+2. **Bước 2: Xác Nhận Dữ Liệu (ACK)**
+   - Máy B nhận được gói tin và gửi lại một gói ACK để xác nhận đã nhận được dữ liệu.
+   - Các thông số trong gói ACK:
+     - Source Port: 80
+     - Destination Port: 12345
+     - Sequence Number: 2001
+     - ACK Number: 1013 (Số sequence của gói dữ liệu + kích thước dữ liệu, ở đây là 12 byte)
+     - ACK Flag: 1
+
+### Đóng Kết Nối (TCP Teardown):
+Sau khi truyền dữ liệu xong, kết nối TCP cần được đóng lại bằng quy trình bốn bước.
+
+1. **Bước 1: FIN**
+   - Máy A gửi một gói tin FIN (finish) để yêu cầu đóng kết nối.
+   - Các thông số trong gói FIN:
+     - Source Port: 12345
+     - Destination Port: 80
+     - Sequence Number: 1013
+     - ACK Number: 2001
+     - FIN Flag: 1
+     - ACK Flag: 1
+
+2. **Bước 2: ACK**
+   - Máy B nhận được gói FIN và phản hồi bằng gửi một gói ACK.
+   - Các thông số trong gói ACK:
+     - Source Port: 80
+     - Destination Port: 12345
+     - Sequence Number: 2001
+     - ACK Number: 1014 (Số sequence của gói FIN + 1)
+     - ACK Flag: 1
+
+3. **Bước 3: FIN**
+   - Máy B gửi một gói FIN để xác nhận yêu cầu đóng kết nối của Máy A.
+   - Các thông số trong gói FIN:
+     - Source Port: 80
+     - Destination Port: 12345
+     - Sequence Number: 2001
+     - ACK Number: 1014
+     - FIN Flag: 1
+     - ACK Flag: 1
+
+4. **Bước 4: ACK**
+   - Máy A nhận được gói FIN và phản hồi bằng một gói ACK cuối cùng.
+   - Các thông số trong gói ACK:
+     - Source Port: 12345
+     - Destination Port: 80
+     - Sequence Number: 1014
+     - ACK Number: 2002 (Số sequence của gói FIN + 1)
+     - ACK Flag: 1
+
+Sau khi hoàn tất các bước này, kết nối TCP giữa Máy A và Máy B được đóng lại.

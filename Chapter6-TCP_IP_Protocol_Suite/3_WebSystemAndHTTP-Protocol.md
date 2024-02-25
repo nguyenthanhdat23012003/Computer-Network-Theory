@@ -84,6 +84,18 @@ Giao thức HTTP sử dụng để truyền tải nhiều loại dữ liệu kh�
 - Đối với dữ liệu nhị phân, cần phải có cơ chế chuyển đổi nó thành văn bản trước khi có thể nhúng vào body của HTTP, thường sử dụng thuật toán mã hóa nhị phân Base64 (là một thuật toán mã hóa dữ liệu nhị phân thành dạng văn bản, trong quá trình chuyển đổi, các ký tự không hợp lệ hoặc không thể đọc được sẽ được thay thế bằng các ký tự an toàn)
 - Để chuyển đổi file nhị phân sang Base64, có thể sử dụng các thư viện mã hóa Base64 có sẵn trong các ngôn ngữ lập trình. sau đó truyền dữ liệu đã được mã hóa qua giao thức HTTP như bình thường
 
+## Cơ chế truyền dữ liệu trong HTTP
+
+- Do sử dụng dịch vụ truyền TCP, giao thức HTTP có hai cơ chế truyền dữ liệu: persistent (keep-alive) và non-persistent
+
+- Trong cơ chế non-persistent, mỗi yêu cầu HTTP được gửi qua một  kết nối mới giữa máy khách và máy chủ, kết nối sẽ bị ngắt sau khi phản hồi HTTP được trả về cho máy khách. Cơ chế này giúp tối ưu hóa sử dụng tài nguyên mạng và giảm thiểu khối lượng thông tin được gửi qua mạng. Tuy nhiên, nó cũng tăng thời gian phản hồi do mỗi yêu cầu phải thiết lập một kết nối mới
+
+- Trong cơ chế persistent (còn gọi là keep-alive), kết nối giữa client và server được duy trì cho nhiều vòng phát truy vấn và nhận phản hồi. Cơ chế này giảm thiểu chi phí kết nối và giảm độ trễ (latency) trong việc truyền tải dữ liệu giữa client và server
+
+- Các trình duyệt web hiện đại thường tự động sử dụng kết nối keep-alive khi gửi yêu cầu HTTP đến máy chủ. Tuy nhiên, một số máy chủ và ứng dụng web cũ hơn có thể không hỗ trợ kết nối keep-alive hoặc tắt đi để giảm tải cho máy chủ
+
+- Nếu sử dụng cơ chế non-persistent, ứng dụng web sẽ cố gắng tạo ít file nhất có thể, bằng cách gộp nhiều file js/css thành một file lớn để gửi đi trong một response, còn sử dụng cơ chế keep-alive thì không cần gộp file
+
 
 
 

@@ -53,5 +53,37 @@ Mỗi loại gói tin thực chất chỉ là các chuỗi văn bản có địn
   <img src="../image/Chapter6/HTTP_Request.png" alt="HTTP_Request">
 </p>
 
+**Gói tin phản hồi của HTTP** bao gồm các phần sau:
+- Status code (mã trạng thái): xác định kết quả yêu cầu của client, ví dụ như thành công (200 OK), tài nguyên không tìm thấy (404 Not Found), lỗi server (500 Internal Server Error), …
+- Headers (tiêu đề): chứa các thông tin về phản hồi của server, ví dụ như kiểu dữ liệu trả về, ngôn ngữ phản hồi, thông tin xác thực và các thông tin khác
+- Body (nội dung): chứa các thông tin cụ thể mà server muốn trả về cho client, ví dụ như nội dung HTML, JSON, XML, …
+
+Như vậy, nếu biết cấu trúc của gói tin này và lập trình với giao thức TCP thì có thể tự xây dựng một chương trình web server đơn giản, hoặc một chương trình để phát truy vấn HTTP tới web server
+
+## Truyền dữ liệu qua HTTP
+
+Giao thức HTTP sử dụng để truyền tải nhiều loại dữ liệu khác nhau giữa client và server. Các loại dữ liệu thông dụng nhất bao gồm HTML, CSS, Javascript, file ảnh, dữ liệu JSON, dữ liệu XML
+
+**Truyền các loại dữ liệu web truyền thống như HTML, CSS, JS:** 
+- Thông thường, một trang web được tạo ra từ một file HTML, file này sẽ tham chiếu đến nhiều file CSS và file JS khác, mỗi khi HTML được tải về client, trình duyệt sẽ căn cứ vào các tham chiếu chứa trong HTML để tải các file có liên quan về.
+
+**Truyền các loại dữ liệu đặc biệt:** 
+- Với các ứng dụng đơn trang (SPA), ứng dụng desktop, hoặc ứng dụng mobile, giao thức HTTP không được sử dụng để truyền tải các file. 
+- Do HTTP sử dụng văn bản cho cấu trúc gói tin, bất kỳ văn bản nào cũng có thể gửi qua giao thức này. 
+- Có hai định dạng văn bản đặc biệt được sử dụng phổ biến:
+    - JSON 
+    - XML. 
+
+- Chương trình server gửi các chuỗi kí tự JSON hoặc XML trong:
+    - JSON là một loại định dạng dữ liệu được viết theo cú pháp tạo object của ngôn ngữ JavaScript. Thực chất JSON cũng chỉ là một chuỗi ký tự được chương trình server sinh ra theo yêu cầu của client
+    - XML là một loại ngôn ngữ định dạng dữ liệu khác cũng ở dạng văn bản. Chuỗi XML được chương trình server nhúng và phần body của gói tin response.
+    - Hai loại văn bản đặc biệt này được sử dụng để định dạng dữ liệu trao đổi giữa ứng dụng Web API và ứng dụng khai thác nó, như ứng dụng mobile, desktop, ứng dụng web đơn trang (SPA)
+
+**Truyền dữ liệu nhị phân:**
+- Dữ liệu nhị phân là những loại dữ liệu khác mà không thể hiện trực tiếp văn bản, thường dùng để lưu trữ các tập tin ảnh, âm thanh, video, phần mềm, …
+- Đối với dữ liệu nhị phân, cần phải có cơ chế chuyển đổi nó thành văn bản trước khi có thể nhúng vào body của HTTP, thường sử dụng thuật toán mã hóa nhị phân Base64 (là một thuật toán mã hóa dữ liệu nhị phân thành dạng văn bản, trong quá trình chuyển đổi, các ký tự không hợp lệ hoặc không thể đọc được sẽ được thay thế bằng các ký tự an toàn)
+- Để chuyển đổi file nhị phân sang Base64, có thể sử dụng các thư viện mã hóa Base64 có sẵn trong các ngôn ngữ lập trình. sau đó truyền dữ liệu đã được mã hóa qua giao thức HTTP như bình thường
+
+
 
 

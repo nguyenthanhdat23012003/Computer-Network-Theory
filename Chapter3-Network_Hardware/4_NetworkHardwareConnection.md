@@ -1,3 +1,59 @@
+**[Vietnamese Below]**
+
+# Network Hardware Connection
+
+## Network Interface Card (NIC)
+
+- **Other Names**: A Network Interface Card (NIC) enables an end device to connect to the transmission medium.
+- On end devices, NICs can be integrated into the motherboard, connected through **PCI** (Peripheral Component Interconnect - a standard interface for connecting peripheral devices to the motherboard), or via **USB** (Universal Serial Bus).
+- Each NIC includes network protocols for data exchange, operating on the NIC hardware.
+- **Data Unit** processed by NICs is the frame, consisting of:
+  - **Frame** = Frame header + Payload (from IP layer).
+  - A frame is the closest data format to physical signals (bits of the frame are directly converted to and from physical signals).
+- **Signal Types** processed by NICs include electrical, optical, and radio signals, depending on the transmission medium. Typically, a single NIC connects to one medium.
+
+### NIC Functions
+- Transmitting data to the network: converts the byte stream of the frame into signals and sends them over the transmission medium.
+- Receiving signals from the medium and converting them into a frame byte stream for further processing on the end device or network equipment.
+- Managing data flow between the computer and the transmission medium.
+
+### MAC Address
+- Each NIC has a unique address called the **MAC Address** (Media Access Control), stored in the NIC's ROM.
+- **MAC Address** is a 48-bit (6-byte) number represented in hexadecimal and divided into two parts:
+  - **OUI** (Organizationally Unique Identifier): The first 24 bits (first 6 digits) identify the NIC manufacturer or supplier.
+  - **NIC Specific**: The remaining 24 bits (last 6 digits) serve as the device's unique serial number assigned by the manufacturer.
+- MAC addresses are globally unique, ensuring no two devices have the same MAC address.
+- When a computer boots, the MAC address is loaded into RAM for use by network protocols to determine whether a network packet is intended for the device.
+- MAC addresses for both the sender and receiver are included in the frame's byte stream and used by devices like bridges or switches.
+
+## Twisted-Pair Cable Connection
+
+- To connect twisted-pair cables to network devices or NICs on end devices, **RJ45 connectors and ports** are used.
+  - **RJ45 Connector**: A standardized plug for the cable.
+  - **RJ45 Port**: The socket for connecting the RJ45 plug to a device.
+- **Wires** in twisted-pair cables are aligned with the RJ45 connector's copper contacts in a specific order, known as the wiring standard.
+- Two common wiring standards:
+  - **T568A**
+  - **T568B**
+
+<p align="center">
+  <img src="../image/Chapter3/Cable.png" alt="Cable">
+</p>
+
+
+- **Network cables** are crimped using a network cable crimping tool:
+  - If both ends follow the same standard: called a **straight-through cable**.
+  - If the ends follow different standards: called a **crossover cable**.
+  - **Straight-through cables** connect devices of different types, while **crossover cables** connect devices of the same type.
+
+## Wireless Connection
+
+- Wireless connections occur between end devices and a network device called a **Wireless Access Point**.
+- A **wireless-capable NIC** is required, installed in the PCI slot on the motherboard or via USB, along with specific driver software.
+- Multiple end devices can connect to a single wireless access point, forming a **hybrid wireless LAN**.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Kết nối phần cứng mạng
 
 ## Card mạng
@@ -37,6 +93,7 @@
 <p align="center">
   <img src="../image/Chapter3/Cable.png" alt="Cable">
 </p>
+
 
 - **Cáp mạng** bấm bằng kìm bấm dây cáp mạng.
   - Nếu hai đầu cùng chuẩn: gọi là **cáp thẳng**.

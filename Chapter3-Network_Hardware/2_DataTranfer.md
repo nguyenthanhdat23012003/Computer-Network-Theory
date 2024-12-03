@@ -1,3 +1,38 @@
+**[Vietnamese Below]**
+
+### Data Encapsulation and Decapsulation on the Source Machine
+
+#### I. Data Flow
+The process of encapsulating data on the source machine proceeds as follows:
+
+1. **Data Preparation**: The application program prepares data in the form of bytes.
+2. **Data Transmission**: The program sends the byte stream to the TCP or UDP protocol.
+3. **Creating PDU**:
+   - The TCP/UDP protocol generates its own PDU (segment or datagram) from the received data.
+   - This PDU is then passed to the IP protocol, which encapsulates the data for end-to-end communication.
+
+4. **Creating Packet**: The IP protocol creates a packet based on the PDU provided by TCP/UDP and passes it to the network card, encapsulating the data for host-to-host communication.
+
+5. **Creating Frame**: The network card generates a frame by adding a frame header and a frame trailer around the packet. Finally, the frame is converted into signals to be transmitted over the network, facilitating communication within the LAN.
+
+<p align="center">
+  <img src="../image/Chapter3/Data_Tranfer_Flow.png" alt="Data Transfer Flow">
+</p>
+
+
+#### II. Data Decapsulation on the Destination Machine
+The process of decapsulating data on the destination machine occurs in reverse order:
+
+1. **Signal Conversion**: The network card converts the received signals into frames.
+2. **Removing Header and Trailer**: The Ethernet protocol removes the frame's header and trailer to create a packet and forwards it to the IP protocol.
+3. **Removing IP Header**: The IP protocol removes the packet's header to extract the SDU (Service Data Unit) and passes it to the TCP/UDP protocol.
+4. **Retrieving Data**: The application calls TCP/UDP to retrieve the byte stream data. The TCP/UDP protocol removes its header to extract the SDU and delivers it to the application.
+5. **Data Conversion**: Finally, the application converts the SDU byte stream into user data.
+
+This process ensures efficient encapsulation and decapsulation of data, enabling seamless communication between devices in the network.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 ### Đóng mở dữ liệu trên máy nguồn
 
 #### I. Luồng đi của dữ liệu
@@ -16,6 +51,7 @@ Quá trình đóng gói dữ liệu trên máy nguồn diễn ra như sau:
 <p align="center">
   <img src="../image/Chapter3/Data_Tranfer_Flow.png" alt="Data Tranfer Flow">
 </p>
+
 
 #### II. Quá trình mở gói dữ liệu trên máy đích
 Quá trình mở gói dữ liệu trên máy đích diễn ra theo thứ tự ngược lại:

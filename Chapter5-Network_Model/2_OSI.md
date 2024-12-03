@@ -1,3 +1,65 @@
+**[Vietnamese Below]**
+
+# OSI (Open System Interconnection) Model
+
+The OSI model is an ISO standard that encompasses all aspects of network communication, enabling any two systems to communicate without concern for the underlying architecture. Proprietary protocols from specific manufacturers often prevent communication between systems of different types. The OSI model was developed to ensure interoperability between any two systems.
+
+The OSI model is not a protocol but a framework for recognizing and designing a flexible, robust, and interoperable network architecture. The OSI model consists of seven distinct yet interrelated layers:
+
+1. **Physical Layer**
+   - **Role:** Manages the physical aspects of data transmission, including voltages, cables, connectors, and physical signals. This layer defines how data is transmitted as bits over the transmission medium (copper cables, fiber optics, or wireless).
+   - **Data Unit:** Bit (0 and 1).
+
+2. **Data Link Layer**
+   - **Role:** Facilitates data transfer between devices on the same network. It handles error detection and correction, access control, and data framing. This layer also manages physical addresses (MAC addresses).
+   - **Data Unit:** Frame.
+
+3. **Network Layer**
+   - **Role:** Determines the path for data to travel from source to destination across multiple networks (routing). It manages logical addresses (IP addresses) and ensures data reaches its destination via routers.
+   - **Data Unit:** Packet.
+
+4. **Transport Layer**
+   - **Role:** Ensures reliable data transfer between devices on a network, manages segmentation and reassembly of data, flow control, and error handling. Common protocols include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+   - **Data Unit:** Segment (TCP) or Datagram (UDP).
+
+5. **Session Layer**
+   - **Role:** Manages communication sessions between applications. This layer establishes, maintains, and terminates sessions. It also handles data synchronization and recovery in case of errors.
+   - **Data Unit:** Data (application-level data).
+
+6. **Presentation Layer**
+   - **Role:** Handles the syntax and semantics of the information exchanged between systems. Tasks include encryption, decryption, compression, and decompression of data. This ensures that data from one system's application layer can be read by another system's application layer.
+   - **Data Unit:** Data (application-level data).
+
+7. **Application Layer**
+   - **Role:** Provides direct network services to user applications. This layer includes protocols and services that users interact with directly, such as HTTP, FTP, SMTP, and DNS.
+   - **Data Unit:** Data (application-level data).
+
+---
+
+## Data Flow Through OSI Layers
+
+### When Data is Sent From a Device:
+
+**From Top to Bottom:**
+1. **Layer 7 (Application):** Data is generated and prepared for transmission.
+2. **Layer 6 (Presentation):** Data is encoded and compressed if necessary.
+3. **Layer 5 (Session):** A communication session is established.
+4. **Layer 4 (Transport):** Data is segmented and control information is added.
+5. **Layer 3 (Network):** Source and destination IP addresses are added.
+6. **Layer 2 (Data Link):** Data is framed and MAC addresses are added.
+7. **Layer 1 (Physical):** Data is converted into electrical signals or radio waves and transmitted over the physical medium.
+
+**From Bottom to Top:**
+1. **Layer 1 (Physical):** Physical signals are received and converted into bits.
+2. **Layer 2 (Data Link):** Frames are validated, and MAC addresses are checked.
+3. **Layer 3 (Network):** IP addresses are checked, and data is routed to the destination.
+4. **Layer 4 (Transport):** Data is reassembled from segments, and integrity is verified.
+5. **Layer 5 (Session):** The communication session is managed and synchronized.
+6. **Layer 6 (Presentation):** Data is decoded and decompressed if necessary.
+7. **Layer 7 (Application):** Data is delivered to the user application.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Mô hình kết nối các hệ thống mở OSI
 
 Là một trong các chuẩn ISO bao hàm mọi mặt về truyền thông mạng, cho phép bất cứ hai hệ thống nào có thể truyền thông với nhau mà không cần quan tâm đến kiến trúc bên dưới của chúng. Các giao thức riêng của một hãng sản xuất thường ngăn ngừa việc truyền thông giữa hai hệ thống không cùng một kiểu -> mô hình OSI ra đời để hai hệ thống bất kỳ có thể giao tiếp với nhau.
@@ -31,6 +93,8 @@ Mô hình OSI không phải một giao thức, nó là một mô hình để nh�
 7. **Tầng ứng dụng (Application Layer)**
    - **Vai trò:** Cung cấp các dịch vụ mạng trực tiếp cho các ứng dụng người dùng. Tầng này bao gồm các giao thức và dịch vụ mà người dùng cuối tương tác trực tiếp như HTTP, FTP, SMTP, và DNS.
    - **Dữ liệu:** Data (dữ liệu ứng dụng).
+
+---
 
 ## Luồng đi của dữ liệu qua các tầng trong mô hình OSI
 

@@ -1,3 +1,41 @@
+**[Vietnamese Below]**
+
+### Terminal Equipment in Computer Networks
+
+Terminal equipment are essential components in computer networks, serving as the source or destination of user data. To operate in a network environment, an end device must ensure both hardware and software connectivity.
+
+#### 1. Physical Connection to the Network
+To establish a physical connection, terminal equipment use a **NIC (Network Interface Card)**, also known as a network card. This device enables computers or terminal equipment to connect to a network. A single device can have multiple NICs to connect to multiple networks simultaneously.
+
+#### 2. Logical Connection
+Logical connections between terminal equipment and the network are maintained through various protocols. To function within a network, an end device requires an operating system (OS) with integrated TCP/IP protocol support. All modern operating systems support the TCP/IP protocol suite, allowing efficient network participation.
+
+#### 3. IP Address
+In a network with multiple terminal equipment, each device, called a **node**, is assigned a unique address known as an **IP address**. This IP address helps identify and differentiate devices within the network.
+
+#### 4. Network Application Software
+Applications installed on terminal equipment can interact with the network via protocols supported by the operating system. These applications are referred to as **network application software**. Protocols at the transport and internet layers do not directly handle user data but process byte streams.
+
+#### 5. Data Conversion
+To utilize protocols, application programs must convert user data into byte streams and vice versa. Protocols at these layers automatically generate their data by adding a small byte sequence called a **header** to the beginning of the received byte stream (payload), forming a larger byte sequence.
+
+#### 6. Protocol Data Unit (PDU)
+The larger byte sequence is called a **PDU (Protocol Data Unit)**, which includes:
+- **Protocol Control Information (PCI)**.
+- **Service Data Unit (SDU)**.
+
+- The PDU of TCP is called a **segment**.
+- The PDU of UDP is called a **datagram**.
+- The PDU of IP is called a **packet**.
+
+Specifically, an IP packet includes:
+- **IP header** (control information for the IP protocol).
+- **Segment** or **Datagram** (depending on the transport protocol used).
+
+Thus, terminal equipment are not just simple connection points but also play a critical role in data transport and processing within a computer network.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 ### Thiết bị đầu cuối trong mạng máy tính
 
 Thiết bị đầu cuối là thành phần quan trọng trong mạng máy tính, đóng vai trò nguồn hoặc đích của dữ liệu người dùng. Để thiết bị đầu cuối có thể hoạt động trong môi trường mạng, nó cần đảm bảo kết nối cả về mặt phần cứng và phần mềm.

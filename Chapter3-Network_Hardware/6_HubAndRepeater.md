@@ -1,3 +1,38 @@
+**[Vietnamese Below]**
+
+# Hub and Repeater
+
+### Repeater (Signal Amplifier)
+- A **Repeater** is a LAN device used to regenerate and amplify signals. Since signals degrade over long distances, a repeater ensures stable signal transmission over extended paths.
+
+### Hub (Signal Concentrator)
+- A **Hub** is a LAN device with multiple ports that allows connections to multiple devices, forwarding signals between all connected devices.
+- Each hub features multiple **RJ45 ports** for:
+  - Connecting to end devices via **straight-through cables**.
+  - Connecting to other hubs via **crossover cables**.
+- Hubs expand LANs in both range and the number of connected devices.
+- **How a Hub Works**:
+  - A hub forwards signals received from one port to all other ports.
+  - Devices connected to these ports compare the MAC address in the received signal to determine if the information is intended for them.
+- **Signal Collision**: If multiple devices transmit signals simultaneously, collisions may occur, disrupting communication. This is managed using the **CSMA/CD** (Carrier-Sense Multiple Access with Collision Detection) protocol.
+- **Comparison with Repeater**: A hub functions similarly to a repeater but includes multiple ports, enabling connections to several devices.
+
+### Types of Hubs
+- **Passive Hub**: Simply forwards signals without amplifying them. The distance from a computer to the hub must not exceed half the maximum distance between two computers in the network.
+- **Active Hub**: Amplifies and regenerates signals, extending the transmission range.
+- **Intelligent Hub**: An active hub with additional administrative support features.
+
+### Advantages and Disadvantages of Hubs and Repeaters
+- **Advantages**:
+  - Cost-effective.
+  - Easy to install.
+- **Disadvantages**:
+  - Cannot distinguish between real signals and noise.
+  - Does not reduce network traffic or prevent congestion.
+  - Limited in the number of connections.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Hub và Repeater
 
 ### Repeater (Bộ lặp tín hiệu)

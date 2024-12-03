@@ -1,3 +1,82 @@
+**[Vietnamese Below]**
+
+# DNS (Domain Name System)
+
+## What is DNS?
+DNS is the domain name system that translates domain names into IP addresses, enabling network devices to communicate with each other.
+
+## Why is DNS Needed?
+- **Easier to Remember**: Domain names are easier to remember and use compared to IP addresses.
+- **Stability**: The IP addresses of servers may change, but domain names typically remain constant.
+- **Hierarchical and Centralized Management**: DNS organizes domain management hierarchically, from top-level domains (TLDs) to subdomains, simplifying the management and maintenance of the global domain name system.
+
+## DNS System Design
+The DNS system includes several types of servers, each with a specific role in resolving domain names:
+- **DNS Resolver (Recursive Resolver)**: Found at ISPs or public DNS services (e.g., Google, Cloudflare), these servers receive domain resolution requests from user devices and query other DNS servers to find the corresponding IP address.
+- **Root Name Server**: There are 13 root server clusters, each with multiple replicas worldwide. They direct DNS resolvers to the appropriate TLD name servers based on domain extensions such as .com, .net, .org, etc.
+- **TLD Name Server**: Located globally and managed by organizations responsible for specific TLDs, these servers direct DNS resolvers to the authoritative name servers of specific domains (e.g., example.com).
+- **Authoritative Name Server**: Managed by companies or organizations that own the domains, these servers provide accurate DNS records (A, AAAA, MX, CNAME, TXT, etc.) for the domains they control.
+
+## DNS Name Resolution Process
+1. The client enters a domain name in the browser.
+2. The browser checks its cache for the IP address corresponding to the domain name. If found, it uses that IP to connect directly; otherwise, it proceeds to the next step.
+3. The operating system’s cache is checked for the IP address. If found, it connects directly; otherwise, the next step follows.
+4. The browser sends a request to the DNS resolver.
+5. The DNS resolver checks its cache for the IP address. If found, it returns the IP to the client. If not, it proceeds.
+6. The DNS resolver queries the Root Name Server.
+7. The Root Name Server returns the IP address of the TLD Name Server.
+8. The DNS resolver queries the TLD Name Server.
+9. The TLD Name Server returns the IP address of the Authoritative Name Server.
+10. The Authoritative Name Server returns the requested IP address to the DNS resolver.
+11. The DNS resolver caches the IP and sends it to the browser, which also caches the IP in the OS and browser caches.
+12. The Authoritative Name Server stores detailed DNS records for each specific domain.
+
+## Types of DNS Records and Their Functions
+- **A Record (Address Record)**:
+  - **Function**: Maps a domain name to an IPv4 address.
+  - **Example**: example.com -> 192.0.2.1.
+  
+- **AAAA Record (IPv6 Address Record)**:
+  - **Function**: Maps a domain name to an IPv6 address.
+  - **Example**: example.com -> 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+  
+- **CNAME Record (Canonical Name Record)**:
+  - **Function**: Maps a domain name to another domain name (alias).
+  - **Example**: www.example.com -> example.com.
+  
+- **MX Record (Mail Exchange Record)**:
+  - **Function**: Specifies the mail server responsible for receiving emails for the domain.
+  - **Example**: example.com -> mail.example.com (priority 10).
+  
+- **TXT Record (Text Record)**:
+  - **Function**: Contains text information for various purposes (SPF, DKIM, etc.).
+  - **Example**: example.com -> v=spf1 include:_spf.example.com ~all.
+  
+- **NS Record (Name Server Record)**:
+  - **Function**: Specifies the DNS servers responsible for resolving the domain.
+  - **Example**: example.com -> ns1.example.com, ns2.example.com.
+  
+- **PTR Record (Pointer Record)**:
+  - **Function**: Maps an IP address to a domain name (reverse DNS lookup).
+  - **Example**: 1.2.0.192.in-addr.arpa -> example.com.
+  
+- **SRV Record (Service Record)**:
+  - **Function**: Identifies servers providing specific services for the domain.
+  - **Example**: _sip._tcp.example.com -> 10 60 5060 sipserver.example.com.
+  
+- **SOA Record (Start of Authority Record)**:
+  - **Function**: Contains administrative information about the domain (primary DNS server, admin email, domain serial number, update parameters, etc.).
+  - **Example**: example.com -> ns1.example.com admin.example.com 2024061401 3600 1800 1209600 300.
+  
+- **CAA Record (Certification Authority Authorization Record)**:
+  - **Function**: Specifies which certificate authorities (CAs) can issue SSL/TLS certificates for the domain.
+  - **Example**: example.com -> 0 issue "letsencrypt.org".
+
+Use the command `dig -t [record_type] [domain_name]` to check record information.
+
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # DNS (Domain Name System)
 
 ## DNS là gì?

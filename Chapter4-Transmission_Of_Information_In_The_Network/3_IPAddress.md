@@ -1,10 +1,106 @@
+**[Vietnamese Below]**
+
+# Logical Address of Terminal Devices - IP Address
+
+In a computer network, there are usually multiple terminal devices operating simultaneously. Each terminal device is a node of the network and is referred to as a **host**. To differentiate between devices, each host is assigned a unique address, known as the **IP address**.
+
+## 1. IP Address (IPv4)
+
+An IPv4 address is a 4-byte (32-bit) integer. The value of an IP address ranges from 0 to 2^32 - 1. The IP address is represented as an array of 4 bytes, each called an **octet**, and displayed in decimal form, ranging from 0 to 255. The octets are separated by dots.
+
+### Example:
+- A common address in home LANs: **192.168.1.1**
+
+### IP Address Division
+An IPv4 address is divided into two parts:
+- **Network ID** (identifies the network)
+- **Host ID** (identifies the host)
+
+To specify how many bits are allocated for the network and how many for the host, a **/x** suffix is added to the IP address. For example, **192.168.1.1/24** means the first 24 bits are for the network, and the remaining 8 bits are for the host.
+
+All IP addresses with the same Network ID are considered **addresses in the same range**. In a LAN, hosts must have IP addresses in the same range to communicate with each other.
+
+### Rules for Assigning IP Addresses
+- The bits in the network portion cannot all be zero. For example: **0.0.0.1/24** is invalid.
+- Addresses where the host identifier bits are all zeros or all ones cannot be assigned to hosts; these addresses, while valid, are reserved for specific purposes.
+
+## 2. Subnet Mask
+
+The **subnet mask** is a 32-bit binary number associated with the IP address to identify the bits used for the Network ID, similar to the **/x** notation mentioned above.
+
+- **IP AND Subnet = Network IP**
+- **IP OR Subnet = Broadcast IP**
+
+### Network IP
+An IP address where the host identifier bits are all zeros (e.g., **192.168.10.0/24**) represents the entire network.
+
+### Broadcast IP
+A broadcast address is used to send data simultaneously to all hosts within the network.
+
+## 3. Loopback Address
+
+The **127.x.x.x** address is the **loopback** or **localhost** address, used for communication testing without sending data onto the network (e.g., when the client and server are on the same terminal device).
+
+## 4. Automatic Private IP Address
+
+IP addresses in the range **169.254.0.0** to **169.254.255.255** are called **Automatic Private IP Addresses**. These addresses are randomly assigned by the operating system when automatic IP assignment (DHCP) fails.
+
+## 5. IP Address Classes
+
+IP address classes distinguish and manage IP address ranges in IPv4 by allocating specific bits for the network and host portions. The main IPv4 address classes are:
+
+### Class A:
+- Used for large networks with many devices.
+- IP range: **1.0.0.0** to **127.255.255.255**.
+- The first 8 bits are the network portion, and the remaining 24 bits are for hosts.
+- Example: **10.0.0.0/8** is a Class A network with subnet mask **255.0.0.0**.
+
+### Class B:
+- Used for medium to large networks.
+- IP range: **128.0.0.0** to **191.255.255.255**.
+- The first 16 bits are the network portion, and the remaining 16 bits are for hosts.
+- Example: **172.16.0.0/12** is a Class B network with subnet mask **255.240.0.0**.
+
+### Class C:
+- Used for small networks.
+- IP range: **192.0.0.0** to **223.255.255.255**.
+- The first 24 bits are the network portion, and the remaining 8 bits are for hosts.
+- Example: **192.168.0.0/16** is a Class C network with subnet mask **255.255.0.0**.
+
+### Class D:
+- Used for **multicast**.
+- IP range: **224.0.0.0** to **239.255.255.255**.
+- Does not use a subnet mask because Class D addresses are used for multicast transmissions in networks.
+
+### Class E:
+- Reserved for research and experimental purposes.
+- IP range: **240.0.0.0** to **255.255.255.255**.
+- Does not use a subnet mask.
+
+### Purpose of IP Address Classes:
+- **IP Management and Distribution:** Each class accommodates networks of different sizes, enabling efficient allocation for various network scales.
+- **Network Identification:** The IP address can easily indicate the class of the network, helping to apply appropriate network configurations.
+
+## 6. IPv4 Address Types
+
+IPv4 addresses are divided into two types:
+- **Private IP:** Used within local area networks (LAN) only. These addresses are not routed on the internet and can be reused in different LANs.
+- **Public IP:** Used for packets transmitted over the internet. A public IP address must be unique for each host connected to the internet.
+
+## 7. Default Gateway
+
+The **default gateway** is the IP address of the router connected to the local computer network. It acts as the LAN's exit point, enabling devices in the network to communicate with external networks.
+
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Địa chỉ logic của thiết bị đầu cuối - Địa chỉ IP
 
 Trên một mạng máy tính, thường có nhiều thiết bị đầu cuối hoạt động đồng thời. Mỗi thiết bị đầu cuối là một node của mạng và được gọi là **host**. Để phân biệt giữa các thiết bị, mỗi host đều được gán một địa chỉ duy nhất, được gọi là **địa chỉ IP**.
 
 ## 1. Địa chỉ IP (IPv4)
 
-Địa chỉ IP (IPv4) là một số nguyên 4 byte (32 bit). Giá trị của địa chỉ IP nằm trong dải từ 0 đến \(2^{32} - 1\). Địa chỉ IP được biểu diễn dưới dạng mảng 4 byte, mỗi byte được gọi là **octet** và được biểu diễn bằng giá trị thập phân nằm trong khoảng từ 0 đến 255. Các octet được viết tách nhau bằng dấu chấm.
+Địa chỉ IP (IPv4) là một số nguyên 4 byte (32 bit). Giá trị của địa chỉ IP nằm trong dải từ 0 đến  2^32 - 1 . Địa chỉ IP được biểu diễn dưới dạng mảng 4 byte, mỗi byte được gọi là **octet** và được biểu diễn bằng giá trị thập phân nằm trong khoảng từ 0 đến 255. Các octet được viết tách nhau bằng dấu chấm.
 
 ### Ví dụ:
 - Địa chỉ thường gặp trong mạng LAN gia đình: **192.168.1.1**

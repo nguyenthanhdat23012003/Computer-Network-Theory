@@ -1,3 +1,68 @@
+**[Vietnamese Below]**
+
+# Information Transmission in Computer Networks
+
+In a network system, there are many different addresses used by protocols at various levels. 
+- When TCP or UDP encapsulates its PDU, it requires the port number of the destination process and the port number of the sending process.
+- When IP encapsulates a packet, it requires the IP address of the source and destination machines.
+- When Ethernet encapsulates a frame, it requires the MAC address of the network card on the source and destination machines within the LAN.
+
+## Port Address
+
+For scenarios requiring a port address, the port is determined as follows:
+- The port number of the process must be provided by the application itself. This is one of the agreements within the application layer protocol. When initializing a socket, the application must provide the port number of the destination process.
+- The source port is assigned by the operating system to the process, either temporarily or permanently, depending on the program's requirements.
+
+## IP Address
+
+For scenarios requiring an IP address:
+- The source IP address is obtained from the IP configuration of the corresponding network interface.
+- The destination IP address must be provided by the application program. When initializing a socket, the application must supply this destination IP address.
+
+## MAC Address
+
+For scenarios requiring a MAC address:
+- The source MAC address is obtained directly from the network card.
+- The destination MAC address is automatically obtained from the destination IP address using the ARP protocol.
+
+Terminal devices have two types of addresses simultaneously: a logical IP address and a physical MAC address. The IP address enables host-to-host communication across different networks, while the MAC address enables the transmission of data frames within a single LAN (within the same broadcast domain).
+
+## ARP Protocol
+
+ARP (Address Resolution Protocol) is a mandatory protocol within the TCP/IP suite. It is responsible for discovering a device's MAC address based on its IP address.
+
+### Example
+
+Two computers, A and B, are connected to the same switch and belong to the same IP range. When computer A wants to send data to computer B, its network card's Ethernet layer must create a frame before sending it over the medium. To create the frame, the MAC address of the destination is needed, while the data only contains the IP address.
+
+1. Computer A checks that the destination IP address is within the same range as itself.
+2. Computer A broadcasts an ARP frame across the entire LAN (broadcast domain) to determine the MAC address associated with computer B's IP address.
+3. If computer B is active, it receives the ARP broadcast (since it is on the same network as A) and responds with its MAC address. Once A knows B's MAC address, it creates a frame directed to computer B.
+4. If computer B is not active, there will be no response to A's ARP request. As a result, A cannot create a frame, and the transmission fails.
+5. If A and B are on different networks, A sends the frame directly to the router (default gateway).
+
+In theory, if a frame can be created (with the correct destination MAC), data can still be transmitted within the LAN without requiring an IP address. However, in practice, the MAC address is automatically determined through ARP. Therefore, both IP and MAC addresses are essential for TCP/IP networks.
+
+Operating systems often manage network card information alongside IP address configurations, even though the network card does not use the IP address itself.
+
+If the destination machine is on the same network as the source machine, the source machine will look in its MAC table to find the recipient's MAC address. If the corresponding MAC address is not found, the ARP protocol is executed to discover the MAC address and store it in the MAC table for future use. Once the MAC address is available, the sender encapsulates the frame and sends it.
+
+If the destination machine is on a different network than the source machine, the source machine will check if a default gateway is configured. If configured, the frame is sent to the default gateway; otherwise, the packet is dropped, and a "destination host unreachable" message is displayed.
+
+When the source and destination machines are on different networks, the process is more complex.
+
+- The data frame is sent from the source machine to the router port connected to the LAN.
+- Upon reaching the router, the frame is unpacked to extract the SDU (the IP packet). After obtaining the IP packet, the router knows the source and destination IP addresses of this packet.
+- The router uses the network identifier of the destination IP address to check if the destination network is connected to it. If so, the router forwards the IP packet to the port connected to the destination network. At the destination port, the IP packet is repackaged into a frame similar to the one on the network card.
+
+- If the destination network is not connected to the router, the router forwards the IP packet to the most appropriate port for reaching the destination network. The packet may pass through several intermediate routers before arriving at the final router (connected to the destination network).
+
+- The process of comparing addresses and deciding on packet forwarding is based on the routing table (which can be manually created for simple networks or automatically generated via routing protocols).
+
+- If the IP packet contains a broadcast address, the router blocks it from being forwarded to other networks. Similarly, if the IP packet contains a private address, the router prevents it from being forwarded to public areas.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Truyền thông tin trong mạng máy tính
 
 Trong hệ thống mạng có tất nhiều địa chỉ khác nhau dùng bởi các giao thức ở các cấp độ. 

@@ -1,3 +1,77 @@
+**[Vietnamese Below]**
+
+# Base64
+
+**Base64** is a method for encoding data to be transmitted through systems that support only ASCII text characters. The Base64 algorithm encodes binary data into a text string that is safe and easy to transmit over protocols like email and HTTP.
+
+## How It Works
+
+Base64 works by converting each group of 3 bytes (24 bits) of binary data into 4 encoded characters from the Base64 character set. The Base64 character set includes:
+
+- 26 uppercase letters (A-Z)
+- 26 lowercase letters (a-z)
+- 10 digits (0-9)
+- 2 special characters (+ and /)
+
+In total, the Base64 character set has 64 characters (hence the name Base64).
+
+### Encoding Process
+
+The Base64 encoding process involves the following steps:
+
+1. **Divide into 3-byte groups:**
+   Input data is divided into groups of 3 bytes (24 bits). If the data is not a multiple of 3 bytes, zero-padding is added.
+
+2. **Convert to 4 blocks of 6 bits:**
+   Each group of 3 bytes is converted into 4 blocks of 6 bits. Each 6-bit block is mapped to a character in the Base64 character set.
+   
+   Specifically: A group of 3 bytes (24 bits) like `01000001 01000010 01000011 (A B C)` 
+   becomes 4 blocks of 6 bits: `010000 010100 001001 000011 (16 20 9 3)`
+
+3. **Map to Base64 characters:**
+   The 6-bit values are mapped to the Base64 character set. For example:
+   `010000 010100 001001 000011` maps to `Q U J D`.
+
+4. **Add padding if necessary:**
+   If the input bytes are not a multiple of 3, the output is padded with `=` characters to ensure the output length is a multiple of 4.
+
+### Encoding Example
+
+Encoding the string "Man" into Base64:
+
+- **Input data (ASCII):** M = 77, a = 97, n = 110
+- **Binary representation:** M = 01001101, a = 01100001, n = 01101110
+- **Combine into 24 bits:** 01001101 01100001 01101110
+- **Divide into 4 blocks of 6 bits:** 010011 010110 000101 101110
+- **Map to Base64:** TWFu
+- No `=` padding is needed since the input data is complete.
+
+### Decoding Process
+
+The Base64 decoding process reverses the encoding steps:
+
+1. Remove any `=` padding characters.
+2. Map the Base64 characters back to 6-bit blocks.
+3. Combine the 6-bit blocks into groups of 3 bytes (24 bits).
+4. Remove any padding bytes added during encoding.
+
+The encoding and decoding processes are straightforward. For more information, see [here](https://en.wikipedia.org/wiki/Base64).
+
+## Applications of Base64
+
+Base64 is widely used in various applications, such as:
+
+- **Email:** Encoding binary content in MIME emails.
+- **HTTP:** Transmitting binary data in URLs and JSON payloads.
+- **Data Storage and Transmission:** Ensuring binary data can be safely handled in text-only systems.
+
+## Conclusion
+
+Base64 is a simple yet effective algorithm for encoding binary data as ASCII text. Understanding how Base64 works allows you to apply it easily in data transmission and storage scenarios.
+
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Base64
 
 **Base64** là một phương thức mã hóa dữ liệu để truyền tải qua các hệ thống mà chỉ hỗ trợ các ký tự văn bản ASCII. Thuật toán Base64 mã hóa dữ liệu nhị phân thành chuỗi văn bản an toàn và dễ dàng truyền tải qua các giao thức như email và HTTP.

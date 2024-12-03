@@ -1,3 +1,78 @@
+**[Vietnamese Below]**
+
+# TCP/IP Protocol Suite
+
+End devices simultaneously operate multiple protocols: application-related protocols, protocols providing end-to-end and host-to-host communication services, and hardware-level protocols.
+
+These protocols are not independent but interrelated, similar to how functions or methods are called in programming languages (application protocols call end-to-end protocols, which in turn call host-to-host protocols).
+
+A group of interrelated protocols on an end device forms a **protocol suite**, with the TCP/IP protocol suite being the most widely used today.
+
+## Layers of the TCP/IP Protocol Suite
+
+The TCP/IP protocol suite organizes protocols into groups called **layers**, with a total of four layers:
+
+1. **Application Layer**: Contains protocols integrated into software applications. Common application layer protocols include:
+   - **HTTP**: Used by browsers and web servers.
+   - **SMTP, POP3, IMAP**: Used by email clients and servers.
+   - **FTP**: Used by FTP clients and servers (e.g., FileZilla).
+
+2. **Transport Layer**: Contains protocols providing end-to-end communication services, primarily:
+   - **TCP (Transmission Control Protocol)**: Offers reliable connection-oriented communication.
+   - **UDP (User Datagram Protocol)**: Offers high-speed, connectionless, unreliable communication.
+
+3. **Internet Layer**: Contains protocols providing host-to-host communication services:
+   - **IP Protocol**.
+   - **IPv6 Protocol**.
+
+4. **Link Layer**: Contains protocols connecting end devices to local networks:
+   - **ARP (Address Resolution Protocol)**: Resolves MAC addresses for given IP addresses.
+   - **RARP (Reverse ARP)**: Resolves logical addresses for given physical addresses.
+   - **NDP (Neighbor Discovery Protocol)**: IPv6 version of ARP.
+   - **DHCP (Dynamic Host Configuration Protocol)** and **DHCPv6**: Automatically assigns configuration parameters to devices.
+
+While many protocols exist, the TCP/IP protocol suite requires implementation of:
+- **IP (Internet Protocol)**.
+- **ARP (Address Resolution Protocol)**.
+- **ICMP (Internet Control Message Protocol)**.
+- **TCP (Transmission Control Protocol)**.
+- **UDP (User Datagram Protocol)**.
+- **IGMP (Internet Group Management Protocol)**.
+
+IPv6 also requires **NDP**, **ICMPv6**, and **MLD**. Application layer protocols are optional as they are bundled with applications.
+
+## Protocol Functionality
+
+Applications include specific protocols, integrated as part of the program module (e.g., **HTTP** is part of web software).
+
+On the operating system, transport and internet layer protocols are provided as system-level subprograms. Applications can use these protocols' communication services via **socket APIs**, allowing them to request data transmission through TCP, UDP, or IP.
+
+Transport and internet layer protocols process data as **byte streams**. Converting data to and from byte streams is the responsibility of the application. These protocols automatically append their headers to the application's payload, forming a **protocol data unit**. TCP's unit is a **segment**, UDP's is a **datagram**, and IP's is a **packet**.
+
+Link layer protocols can also operate on hardware, unlike the other three layers.
+
+## Role of Ports
+
+On each end device, multiple processes may simultaneously use TCP or UDP communication services. Therefore, a mechanism is needed to differentiate data for specific processes.
+
+TCP and UDP use **ports** to identify which process is utilizing their services. Ports range from 0 to \(2^{16} - 1\). Processes can select any unused port, or the operating system may assign one dynamically.
+
+Processes must agree on port values. Both source and destination ports are included in TCP/UDP packets to ensure proper routing to the intended process.
+
+### Key Points About Ports:
+- Logical connection points for network data sent and received via network protocols.
+- Ports are identified by integers ranging from 0 to 65535 and are used to distinguish services and manage connections.
+
+### Types of Ports:
+1. **Well-known Ports**: Range 0–1023, reserved for standard system services and protocols.
+2. **Registered Ports**: Range 1024–49151, registered for specific applications by organizations.
+3. **Dynamic/Private Ports**: Range 49152–65535, dynamically assigned for temporary connections.
+
+### Port Functionality:
+When a device communicates with a specific service on a network, it sends data to an IP address and a specific port. The receiving system listens and processes requests on this port.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Bộ giao thức TCP/IP
 
 Trên thiết bị đầu cuối có đồng thời nhiều giao thức cùng hoạt động: các giao thức gắn với phần mềm ứng dụng, những giao thức cung cấp dịch vụ truyền thông end-to-end và host-to-host, ngoài ra còn có các giao thức gắn với phần cứng. 

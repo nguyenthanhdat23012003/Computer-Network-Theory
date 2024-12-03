@@ -1,3 +1,62 @@
+**[Vietnamese Below]**
+
+# Classification of Computer Networks
+
+Computer networks can be classified based on various criteria. These criteria include: signal transmission medium, bandwidth, communication protocol, network scale, device connection topology, flow control mechanism, switching techniques, etc.
+
+The most common classification is based on **network scale**. According to this method, computer networks are divided into models ranging from small to large, including:
+- **PAN** (Personal Area Network)
+- **LAN** (Local Area Network)
+- **MAN** (Metropolitan Area Network)
+- **WAN** (Wide Area Network)
+- **Internet** (Global Network)
+
+---
+
+### Personal Area Network (PAN)
+- A network that allows devices to communicate within an individual's personal range.
+- A common example is a wireless network connecting a computer to its peripherals.
+  - Most computers have associated devices like screens, keyboards, mice, and printers.
+  - Some companies have designed short-range wireless networks like **Bluetooth** to connect these components to the computer.
+- Another type of PAN arises when embedded medical devices such as pacemakers, insulin pumps, or hearing aids communicate with remote controls operated by users.
+- PANs can also be built using other short-range communication technologies, such as **RFID** on smart cards.
+
+---
+
+### Local Area Network (LAN)
+- A private network deployed within a building or area, typically spanning a few kilometers.
+- **Characteristics of LAN**:
+  - Utilizes dedicated LAN technologies, including specific transmission media and network devices for LAN.
+  - Has a limited operational range, from a few meters to a few hundred meters.
+  - Data transmission speeds are typically 100 Mbps, 1 Gbps, or 100 Gbps.
+  - Typically private networks, owned by households, schools, or institutions.
+  - Range and transmission speed are determined by LAN technology, which often prioritizes speed over distance.
+
+---
+
+### Wide Area Network (WAN)
+- A network that can be deployed over large geographical areas, such as a province, region, country, or continent.
+- **Characteristics of WAN**:
+  - Uses various network technologies distinct from LAN technologies.
+  - Has virtually unlimited range, from a few hundred meters to several thousand kilometers.
+  - Data transmission speeds are generally lower than those of LAN.
+  - Typically owned and operated by network/Internet service providers.
+  - WAN technologies prioritize range and stability over transmission speed.
+
+---
+
+### Global Network Internet
+- A WAN that spans the entire world, with several differences from typical WANs:
+  - Can connect all LANs and WANs worldwide.
+  - Not owned by any single individual or organization.
+  - **Internet** is short for **internetwork**, often translated as **liên mạng** – a network of networks. Simply put, multiple interconnected networks form the Internet.
+
+---
+
+> **Note**: The distinctions above mainly depend on the type of technology used, leading to differences in speed and network range. LAN technologies prioritize speed, while WAN technologies prioritize range.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Phân loại mạng máy tính
 
 Mạng máy tính có thể phân loại theo nhiều tiêu chí khác nhau. Các tiêu chí phân loại mạng có thể là: môi trường truyền tín hiệu, băng thông, giao thức truyền thông, quy mô mạng, sơ đồ kết nối thiết bị, cơ chế kiểm soát luồng, kỹ thuật chuyển mạch, …

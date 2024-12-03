@@ -1,3 +1,66 @@
+**[Vietnamese Below]**
+
+# Computer Network Concepts
+
+### Computer Networking
+A system consisting of at least two computers connected to exchange information and share resources.
+
+### A Computer Network is a System:
+- Composed of multiple independent components.
+- Each component serves distinct roles.
+- The components can interact and coordinate for a common task.
+
+### A Computer Network Includes:
+- End devices, transmission media, network devices, and network protocols.
+
+---
+
+### End Devices (I/O Devices)
+- Any device capable of generating data for the user.
+- Connecting end devices occurs at two levels:
+  - **Physical Connection**: Established through transmission media and network devices.
+  - **Logical Connection**: Established through network protocols.
+
+---
+
+### Transmission Media
+- Enables physical signals to travel from one device to another.
+- Can include electromagnetic waves, electrical pulses, or optical pulses.
+  - Transmission media types:
+    - Wireless transmission - electromagnetic waves.
+    - Copper cables - electrical pulses.
+    - Fiber optic cables - light signals.
+
+---
+
+### Network Devices
+- Common computers placed along the path of information, performing various roles: connecting end devices to the medium and to each other, or connecting networks together.
+- The main purpose of network devices is to expand the network.
+
+#### Differentiating Network Devices and End Devices:
+- Network devices are not the source or destination of information. They only relay information and do not allow user applications to be installed.
+
+#### Common Network Devices:
+- **Hub, repeater, switch, bridge**: Connect end devices into a small network area (LAN).
+- **Router**: Connects distinct networks into a larger network.
+- **Modem**: Converts signals from one form to another.
+- **Access Point**: Connects end devices to a network without wires.
+- **Firewall**: Protects the network.
+
+---
+
+### Network Protocol
+- A set of rules governing the process of information exchange in a network.
+
+---
+
+### Network Models
+- In computer networks, numerous hardware and software components operate together. A network model is necessary to systematize these components.
+- A network model allows categorization of the components in a network system, defines their roles and functions, and describes how they interact.
+- Two common models are **OSI** and **TCP/IP**.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Khái niệm mạng máy tính
 
 ### Mạng máy tính (networking)

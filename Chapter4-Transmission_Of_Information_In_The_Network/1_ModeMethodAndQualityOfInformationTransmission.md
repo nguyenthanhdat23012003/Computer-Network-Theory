@@ -1,3 +1,65 @@
+**[Vietnamese Below]**
+
+# Modes, Methods, and Quality of Information Transmission
+
+## 1. Transmission Modes
+
+Transmission modes describe the direction of information flow between two devices in a network. There are three primary modes:
+
+- **Simplex Mode:** Allows information to flow in only one direction. A device can either send or receive information but not both.
+
+- **Half-Duplex Mode:** Allows bidirectional communication, but not simultaneously. A device can send and receive data, but only one function operates at a time.
+
+- **Full-Duplex Mode:** Enables simultaneous bidirectional communication. Devices can send and receive data at the same time.
+
+---
+
+## 2. Transmission Methods
+
+Transmission methods describe the number of devices involved in the communication process. Key methods include:
+
+- **Unicast:** Information is transmitted from one device to another specific device. This is the most basic and common model.
+
+- **Broadcast:** Information is transmitted from one device to all other devices in the network. This method is crucial for many network protocols.
+
+- **Multicast:** Information is transmitted from one device to a group of devices. This method is often used by routers and routing protocols.
+
+---
+
+## 3. Collision and Collision Domain
+
+- **Signal Collision:** Occurs when signals from multiple sources interfere, causing communication failure.
+
+- **Collision Domain:** A network area where signals can collide. Devices like repeaters and hubs expand the collision domain, while bridges and switches isolate collision domains.
+
+- **Broadcast Domain:** A network area where data frames can move freely without restriction. Devices within the same broadcast domain can exchange data frames.
+
+---
+
+## 4. Quality of Information Transmission
+
+- **Bandwidth:** The maximum rate of data transmission over a link, typically measured in bps (bits per second).
+
+- **Throughput:** The actual average rate of data transmission over a network link.
+
+- **Goodput:** The effective data transmission rate of a network link, excluding protocol overhead.
+
+- **Latency:** The time required to transfer a block of data from one node to another, including:
+  
+  - **Processing Delay:** Time taken to process or encapsulate packets at nodes.
+  
+  - **Propagation Delay:** Time taken for a single bit of information to travel across the link from source to destination.
+  
+  - **Transmission Delay:** Time required to push all the bits of a frame onto the transmission medium.
+  
+  - **Queueing Delay:** Time spent in queues at network nodes.
+
+---
+
+These concepts are crucial for designing and optimizing network systems, ensuring efficiency and reliability in information transmission.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Chế độ, phương thức và chất lượng truyền thông tin
 
 ## 1. Chế độ truyền thông tin (Transmission mode)

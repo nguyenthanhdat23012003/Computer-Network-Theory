@@ -1,3 +1,46 @@
+**[Vietnamese Below]**
+
+## Bridge and Switch
+
+### Bridge
+- A **Bridge** is a LAN device with two ports capable of forwarding data frames between network segments based on the MAC addresses of the sender and receiver.
+- **Functions of a Bridge**:
+  - Connects two or more independent network segments, with each port of the bridge connecting to a different segment.
+  - When receiving a frame:
+    - If the destination MAC address is in the same segment as the source, the bridge filters the frame to avoid network congestion.
+    - If the destination MAC address is in another segment, the bridge forwards the frame to the corresponding segment.
+  - The bridge maintains a **MAC address table** to store device addresses and updates this table when receiving new frames.
+
+<p align="center">
+  <img src="../image/Chapter3/Bridge.png" alt="Bridge">
+</p>
+
+
+- **Types of Bridges**:
+  - **Transparent Bridge**: Connects two LANs using the same technology; forwards frames without altering their structure.
+  - **Translational Bridge**: Connects two LANs using different technologies; converts frames between network technologies before forwarding.
+
+### Switch
+- A **Switch** is a LAN device with multiple ports that forwards data frames between devices based on MAC addresses. It can be considered a **bridge with multiple RJ45 ports** or **a bridge + hub**.
+- Switches allow:
+  - Connecting multiple end devices and other network devices via cables (crossover cables for similar devices, straight-through cables for different devices).
+  - Expanding a LAN to form a larger network.
+  - When multiple switches are used, they are often housed in **rack cabinets** for protection and ventilation.
+- **How a Switch Works**:
+  - Upon receiving a frame from a port, the switch forwards the frame to the appropriate port based on the source and destination MAC addresses in the frame.
+  - The switch uses a **switching table** to store device MAC addresses and their corresponding ports. This table is built automatically as devices exchange packets on the network.
+  - After identifying the destination port, the switch forwards the frame to that port and retransmits it as a signal.
+- **Switch Forwarding Modes**:
+  - **Store-and-Forward**: Waits until the entire frame is received to check for errors. Frames with errors are not transmitted, increasing reliability but causing slight delays.
+  - **Cut-Through**: Forwards frames immediately after reading the MAC address—faster but may forward erroneous frames.
+- **Advantages of Switches**:
+  - Improves network performance by directing signals only to the destination device, reducing data collisions.
+  - Switches are widely used today:
+    - Home networks often use 3- to 8-port switches.
+    - Businesses typically use 12- to 48-port switches, which require rack cabinets with ventilation fans.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 ## Bridge và Switch
 
 ### Bridge (Cầu nối)
@@ -12,6 +55,7 @@
 <p align="center">
   <img src="../image/Chapter3/Bridge.png" alt="Bridge">
 </p>
+
 
 - **Phân loại Bridge**:
   - **Bridge giao vận**: Kết nối hai mạng LAN cùng công nghệ, chỉ chuyển frame mà không thay đổi cấu trúc.

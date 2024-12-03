@@ -1,3 +1,31 @@
+**[Vietnamese Below]**
+
+# Network Protocols Concept
+
+A **network protocol** is a set of rules governing the communication process that the components of a network system must follow when participating in communication.
+
+Each protocol is a set of rules specifying three main aspects:
+1. **Structure of information**: Defines how information is organized and formatted.
+2. **Sequence of information exchange**: Specifies the order of messages sent and received.
+3. **Actions to perform when sending/receiving information**: Rules defining when and how a component sends and responds to messages.
+
+### Elements of a Network Protocol
+- **Types of messages to be exchanged**: Specifies the various types of messages required for system components.
+- **Message syntax**: Defines how messages are constructed.
+- **Field semantics**: Indicates the meaning and role of each field within the message.
+
+### Role of Network Protocols
+Network protocols serve as a **common language** that connects and coordinates the operation of devices.
+
+### Protocol Specification
+A **protocol specification** is a design document that describes a protocol in writing. When applications are developed according to this specification and installed on devices, they form a program called a **protocol implementation**.
+
+### Open and Proprietary Protocols
+- **Open protocols**: Protocols accessible and usable by anyone. Open protocols are described at [RFC Editor](https://www.rfc-editor.org/).
+- **Proprietary protocols**: Closed protocols known only to the developer. For example, Skype uses its proprietary protocol, possibly due to the P2P model it employs, enhancing security through proprietary design.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Khái niệm giao thức mạng
 
 **Giao thức mạng** là tập hợp các quy tắc điều khiển quá trình truyền thông mà các thành phần của hệ thống mạng phải tuân theo khi tham gia vào quá trình truyền thông.

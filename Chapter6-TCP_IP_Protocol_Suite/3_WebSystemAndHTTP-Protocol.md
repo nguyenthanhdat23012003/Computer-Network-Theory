@@ -1,3 +1,134 @@
+**[Vietnamese Below]**
+
+# Web Systems and HTTP Protocol
+
+## Common Characteristics of Application Layer Protocols:
+
+- Application layer protocols are diverse and tied to the applications using them. These protocols are typically not general-purpose but serve specific applications, so discussing an application layer protocol usually involves mentioning the software that utilizes it.
+- Regarding packet structure, application layer protocols are of two types: text-based protocols and byte-based protocols. Text-based protocols create packets as formatted character strings (e.g., HTTP packets). Byte-based protocols produce packets as byte strings, such as in ICMP.
+- Application protocols typically follow one of two communication models: request-response or one-way communication. 
+  - **Request-response model**: A half-duplex communication where data can be transmitted bidirectionally but not simultaneously. One side sends a request, and the other processes it and responds.
+  - **One-way model**: A simplex communication mode.
+- For data control methods:
+  - **In-band control**: Control commands are sent with the data, like in HTTP.
+  - **Out-of-band control**: Control commands and data are sent through separate communication channels, as in FTP.
+- All application protocols use one of the two transport services: TCP or UDP. The choice depends on the application's requirements.
+
+---
+
+## Web Systems
+
+A web system is a network application consisting of two main components: a **web server** and a **web browser**.
+
+- **Web server**: A computer configured to run web applications and provide resources such as web pages, files, and other online services. Databases store and manage data for web applications, enabling querying and data retrieval services.
+- **Web browser**: A software installed on personal computers or mobile devices to access web pages and applications on the Internet. It allows users to view online content, interact with web applications, and use online services.
+
+### Difference Between Web Systems and Web Applications
+
+- **Web system**: A collection of components and services interconnected to serve various purposes and functions. It is larger in scale and more complex in structure.
+- **Web application**: A specific software program running on a web browser, performing one or more specific tasks. It is smaller in scale and focused on particular functionalities.
+
+In a web system, the HTTP protocol is used to exchange data between the web server and the web browser.
+
+HTTP operates on a client-server model, where web browsers (clients) send requests to web servers, and servers respond with HTTP responses containing the requested resources.
+
+<p align="center">
+  <img src="../image/Chapter6/Client_Server_Architecture.png" alt="Client_Server_Architecture">
+</p>
+
+---
+
+### How HTTP Works
+
+1. **Client Sends an HTTP Request to the Server**: 
+   - When a user enters a URL into the browser, the browser creates an HTTP request and sends it to the server using TCP transport services.
+
+2. **Server Receives the HTTP Request**: 
+   - Upon receiving the request, the server processes it to retrieve the requested resource.
+
+3. **Server Processes the HTTP Request**:
+   - The server verifies the request, authenticates the user (if required), and locates the requested resource.
+
+4. **Server Returns an HTTP Response**:
+   - After processing the request, the server sends an HTTP response containing the requested resource, including HTTP headers, status codes, and the content.
+
+5. **Client Receives the HTTP Response**:
+   - Once the client receives the response, the browser displays the requested content to the user.
+
+---
+
+### HTTP Packet Structure
+
+HTTP has two types of packets with distinct structures:
+- **HTTP Request Packet**
+- **HTTP Response Packet**
+
+Each packet is essentially a formatted text string.
+
+#### HTTP Request Packet
+
+An HTTP request consists of the following parts:
+- **Method**: Specifies the action the client wants to perform on the server's resource, e.g., GET (retrieve information), POST (create a resource), PUT (update a resource), DELETE (delete a resource), and more.
+- **URL (Uniform Resource Locator)**: Identifies the address of the resource the client wants to access.
+- **Headers**: Contain information about the client's request, such as content type, language, authentication details, etc.
+- **Body**: Contains specific information the client wants to send to the server, such as form data or uploaded files.
+
+<p align="center">
+  <img src="../image/Chapter6/HTTP_Request.png" alt="HTTP_Request">
+</p>
+
+#### HTTP Response Packet
+
+An HTTP response consists of the following parts:
+- **Status Code**: Indicates the outcome of the client's request, e.g., success (200 OK), not found (404 Not Found), server error (500 Internal Server Error), etc.
+- **Headers**: Contain information about the server's response, such as content type, language, authentication details, etc.
+- **Body**: Contains specific information the server wants to return to the client, such as HTML content, JSON, XML, etc.
+
+With knowledge of these packet structures and programming with the TCP protocol, one can create a simple web server or a program to send HTTP requests to a web server.
+
+---
+
+## Data Transmission via HTTP
+
+The HTTP protocol is used to transmit various types of data between the client and server. Common types of data include HTML, CSS, JavaScript, images, JSON, and XML.
+
+### **Transmitting Traditional Web Data (HTML, CSS, JS):**
+- A typical web page is created from an HTML file referencing multiple CSS and JS files. Once the HTML is downloaded to the client, the browser uses the references in the HTML to fetch the related files.
+
+### **Transmitting Special Data Types:**
+- For **Single Page Applications (SPAs)**, desktop, or mobile applications, HTTP is not used to transmit files directly.
+- Instead, HTTP transmits text-based data formats:
+  - **JSON**: A data format written in JavaScript object syntax. It is essentially a string generated by the server upon the client's request.
+  - **XML**: Another text-based data format embedded in the response body by the server.
+
+These formats are commonly used for data exchange between Web APIs and consuming applications, such as mobile or SPA web applications.
+
+### **Transmitting Binary Data:**
+- Binary data includes non-textual data such as images, audio, videos, and software.
+- To transmit binary data, it must first be converted to text using a binary encoding algorithm like Base64. This algorithm encodes binary data into a text format, replacing unreadable characters with safe ones.
+- After encoding, the binary data is included in the HTTP body and transmitted like any other text data.
+
+---
+
+## Data Transmission Mechanisms in HTTP
+
+Using TCP transport services, HTTP supports two data transmission mechanisms: **persistent (keep-alive)** and **non-persistent**.
+
+### Non-Persistent HTTP
+- Each HTTP request is sent over a new connection between the client and the server, which is terminated after the HTTP response is sent back. 
+- This mechanism optimizes network resource usage and minimizes the amount of data transmitted over the network but increases response time due to repeated connection setups.
+
+### Persistent HTTP (Keep-Alive)
+- The connection between the client and server is maintained across multiple request-response cycles.
+- This reduces connection costs and latency in data transmission between the client and server.
+
+Modern web browsers automatically use keep-alive connections for HTTP requests. However, some older servers and web applications may not support keep-alive or disable it to reduce server load.
+
+- In **non-persistent HTTP**, web applications minimize the number of files by bundling multiple JavaScript/CSS files into one large file.
+- In **persistent HTTP**, such bundling is unnecessary due to the reduced overhead from maintaining a single connection.
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Hệ thống web và giao thức HTTP 
 
 ## Đặc điểm chung của các giao thức tầng ứng dụng: 
@@ -6,7 +137,7 @@
 - Về cấu trúc gói tin, các giao thức tầng ứng dụng có 2 kiểu: giao thức dựa trên văn bản và giao thức dựa trên chuỗi byte. Giao thức dựa trên văn bản tạo ra gói tin là chuỗi ký tự có định dạng. Ví dụ gói tin HTTP là một chuỗi ký tự lớn. Giao thức dựa trên chuỗi byte tạo ra gói tin là một chuỗi byte, như trong giao thức ICMP
 - Các giao thức ứng dụng thường sử dụng một trong hai mô hình truyền thông tin: mô hình truy vấn phản hồi, hoặc mô hình một chiều. Mô hình truy vấn phản hồi chính là chế độ truyền thông bán song công, với dữ liệu có thể truyền 2 chiều nhưng không đồng thời, có một bên chủ động gửi truy vấn và một bên xử lý truy vấn rồi trả lời. Mô hình một chiều chính là chế độ truyền đơn công
 - Về phương thức kiểm soát dữ liệu, các giao thức ứng dụng có thể là In-band, tức là lệnh điều khiển gửi kèm với dữ liệu, như trong giao thức HTTP, hoặc là theo kiểu out-of-band, tức là lệnh điều khiển và dữ liệu đi theo những kênh truyền thông riêng, giống như trong giao thức FTP
-Tất cả các giao thức ứng dụng phải sử dụng một trong hai dịch vụ truyền thông của tầng giao vận là TCP hoặc UDP. Tùy vào yêu cầu của ứng dụng mà lựa chọn dịch vụ giao vận phù hợp
+- Tất cả các giao thức ứng dụng phải sử dụng một trong hai dịch vụ truyền thông của tầng giao vận là TCP hoặc UDP. Tùy vào yêu cầu của ứng dụng mà lựa chọn dịch vụ giao vận phù hợp
 
 ## Hệ thống web
 

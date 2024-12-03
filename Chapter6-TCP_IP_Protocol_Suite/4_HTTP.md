@@ -1,3 +1,94 @@
+**[Vietnamese Below]**
+
+# Self-Contribution on HTTP
+
+## HTTP is Stateless, but not Sessionless:
+
+- HTTP is considered **stateless** because each HTTP request from the client (browser user) to the server (host) is treated as independent. This means each HTTP request does not retain state information from the previous one. The server processes the current request without knowing about earlier requests from the same client.
+- Although HTTP is stateless, web applications often need to store and manage user **session** information. A session is a mechanism that allows retaining a user's state during a specific time period while they interact with the web application. Session information usually includes variables like login information, shopping cart contents, language preferences, etc.
+- The session mechanism is often implemented using storage methods such as **cookies** or **URL rewriting**. Whenever a user accesses the web application, a session ID is assigned to the user, and information related to this session is stored (usually server-side) and maintained across HTTP requests.
+
+## HTTPS Protocol
+
+- HTTP operates on a Client–Server model. Website access is carried out through communication between these two entities. When you visit a website via HTTP, the browser establishes a connection to the website’s server using the IP address provided by the DNS system. After receiving the request, the server sends back the corresponding commands to render the website, including content such as text, images, videos, audio, etc.
+- During the connection and data exchange process, your browser inherently trusts the IP address as being from the website’s server you intended to access **without any authentication measures**. The information transmitted via HTTP (including IP address, data entered into the website, etc.) is also **not encrypted or secured**. This vulnerability is exploited by hackers to steal user information, commonly referred to as **sniffing attacks**.
+- **The HTTPS Protocol** (Hypertext Transfer Protocol Secure) is the secure version of HTTP, used to protect the transmission of information over the Internet. It is an important method to ensure data security and integrity between the client (user) and server.
+  In essence, this is the HTTP protocol with the integration of **SSL certificates** to encrypt communication messages for increased security. HTTPS can be understood as a safer and more secure version of HTTP.
+- Both **SSL and TLS** use the **PKI** (Public Key Infrastructure) asymmetric system. This system employs two “keys” to encrypt communication: a “public key” and a “private key.” Anything encrypted by the public key can only be decrypted by the private key, and vice versa. These standards ensure content is encrypted before transmission and decrypted upon receipt. This makes it impossible for hackers to “understand” the intercepted information.
+- The data transmission of HTTPS is similar to HTTP; however, when the browser uses the TCP protocol to package an HTTPS request into packets, these packets must pass through the TSL or SSL security layer.
+- When investigating the data flow of an HTTPS request, the steps and network layers involved differ somewhat from HTTP because HTTPS uses encryption to protect data during transmission. Below are the specific steps for an HTTPS request:
+  - **TLS Handshake**:
+    - **Application Layer**: The user wants to access a secure website, using a URL starting with "https://example.com." The browser generates an HTTPS request.
+    - **Transport Layer**: The browser uses the TCP protocol like HTTP to package the HTTPS request into packets. However, unlike HTTP, this packet passes through the Transport Layer Security (TLS) or Secure Sockets Layer (SSL) before being sent to TCP for transmission.
+    - **TLS Handshake**: Before transmitting actual data, the client and server must establish a secure connection through a process called "TLS handshake":
+      - **Client Hello**: The client sends a "Client Hello" message to the server, proposing supported TLS versions and other details such as encryption algorithms.
+      - **Server Hello**: The server responds with a "Server Hello" message, agreeing on the TLS version and selecting security parameters such as SSL/TLS certificates, encryption algorithms, and more.
+      - **Authentication and Pre-master Secret**: The server authenticates itself, and both the client and server agree on a "pre-master secret" for encryption.
+      - **Session Keys**: Based on the pre-master secret and selected information, the client and server generate session keys for encrypting and decrypting data.
+    - **Data Encryption and Transmission**: After successfully establishing the TLS secure connection, data from the HTTP request is encrypted with session keys, then packaged into TCP packets as usual.
+    - **Network Layer**: The encrypted and secured TCP packets pass through the network, just like HTTP. The network layer still uses the IP protocol to route packets to the destination server.
+    - **Data Link Layer and Physical Layer**: At routing points, the encrypted TCP packets from the HTTPS request are converted into data frames compatible with the network’s data link and physical layers.
+    - **Server Side**: When the encrypted TCP packets reach the web server, they are decrypted using session keys established during the TLS handshake. The web server then processes the HTTPS request as a standard HTTP request.
+    - **HTTPS Response**: The above process is repeated for the HTTPS response, with data from the web server encrypted by TLS and sent back to the client.
+- Through the TLS handshake process and encryption throughout the data transmission process, HTTPS ensures user data is safely protected during network transmission, preventing attacks such as eavesdropping and data tampering.
+
+## SSL Protocol
+
+- SSL is a security protocol providing privacy, authentication, and integrity on the Internet.
+- SSL uses data encryption to ensure sensitive information is not exposed while transmitted over the network.
+- SSL uses data encryption to protect information. It can be likened to sending a letter to your parents but not wanting anyone else to read it except your parents. You and your parents agree on a common encryption rule before sending the letter. Before sending the letter, you encrypt it according to the agreed rule, and when it reaches your parents, they decrypt it. Even if the letter is intercepted or read by someone along the way, they cannot understand its contents because it’s encrypted, and they don’t have the key to decrypt it.
+- An SSL certificate acts like an ID badge or identification proving someone’s identity (similar to a personal ID card). An SSL certificate contains the following information:
+  - **Website Address Information**: The SSL certificate lists the domains it applies to.
+  - **Public Key**: Part of the certificate used to encrypt data before it’s sent to the server. This public key is publicly accessible.
+  - **Private Key**: Secretly stored on the web server, the private key must decrypt data encrypted by the public key.
+- Types of SSL Certificates:
+  - **Single Domain**: Applies to a single domain.
+  - **Wildcard Domain**: Applies to a domain and its subdomains.
+  - **Multi-Domain**: Applies to multiple domains.
+- SSL certificates also have different levels of validation:
+  - **Domain Validation**: The most common, least stringent, and cheapest level of validation. All the business needs to do is prove they control the domain, primarily through DNS record validation or HTTP validation.
+  - **Organization Validation**: This involves more thorough and manual validation: The CA contacts the individual or business requesting the certificate to validate the certificate for the correct entity. These certificates are more trusted by users.
+  - **Extended Validation**: Requires a full background check of the organization before an SSL certificate can be issued.
+- TLS (Transport Layer Security) is a network security protocol and the evolution of SSL.
+- The entire TLS connection process involves complex steps and algorithms but can be summarized in the following basic steps:
+  - **Handshake**: The initial step in establishing a secure connection. The browser or application sends a connection request to the server, and the server responds with its SSL/TLS certificate information and a public key.
+    - **Client Hello**: The client sends a "Client Hello" message to the server. This message includes:
+      - The TLS version the client supports.
+      - A list of encryption suites supported by the client.
+      - A random string generated by the client.
+      - Other necessary parameters.
+    - **Server Hello**: The server responds with a "Server Hello" message to the client. This message includes:
+      - The TLS version chosen by the server.
+      - The encryption suite chosen by the server from the client’s list.
+      - A random string generated by the server.
+      - The server’s SSL/TLS certificate.
+      - Other necessary parameters.
+  - Certificate Verification:
+    - Server Certificate:
+      - The browser checks the server’s SSL/TLS certificate.
+      - The certificate is issued and signed by a trusted Certificate Authority (CA).
+      - The browser verifies that the certificate was signed by a trusted CA, has not expired, and the domain in the certificate matches the server’s domain.
+  - Session Key Creation:
+    - Session Key:
+      - After successfully verifying the certificate, the browser creates a new session key, which is a secret key.
+      - The browser encrypts this session key using the server’s public key and sends it to the server. This step creates the "Premaster Secret."
+  - Encrypting and Transmitting Data:
+    - Building the Session Key:
+      - Both the browser and the server use the "Premaster Secret," along with the "client random" and "server random," to create a session key using a session key generation algorithm.
+      - This session key is used to encrypt and decrypt transmitted data throughout the connection session to ensure performance.
+    - Sending Finished Messages:
+      - The browser sends a "Finished" message encrypted with the session key, confirming the handshake is complete.
+      - The server sends back a "Finished" message encrypted with the session key, confirming the handshake is complete.
+    - Encrypting and Transmitting Data:
+      - After a successful handshake, all data transmitted between the browser and server is encrypted using the session key.
+      - This ensures that no information can be read as it travels across the network.
+    - Ending the Session:
+      - When the connection session ends, both the browser and the server discard the session key.
+      - All information about the session is deleted to ensure security and prevent session key reuse.
+
+
+<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+
 # Self-contribute cho phần HTTP
 
 ## HTTP là stateless, nhưng không sessionless:
@@ -84,16 +175,3 @@ Thực chất, đây chính là giao thức HTTP nhưng tích hợp thêm **Ch�
         - Kết thúc phiên
             - Khi phiên kết nối kết thúc, cả trình duyệt và máy chủ sẽ hủy bỏ khóa phiên.
             - Mọi thông tin về phiên này sẽ bị xóa để đảm bảo an toàn và không thể tái sử dụng khóa phiên.
-
-
-
-
-
-
-
-
-
-
-
-
-

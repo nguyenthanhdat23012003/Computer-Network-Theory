@@ -31,6 +31,10 @@ The DNS system includes several types of servers, each with a specific role in r
 11. The DNS resolver caches the IP and sends it to the browser, which also caches the IP in the OS and browser caches.
 12. The Authoritative Name Server stores detailed DNS records for each specific domain.
 
+<p align="center">
+  <img src="../image/Chapter6/DNS.png" alt="DNS">
+</p>
+
 ### Types of DNS Records and Their Functions
 - **A Record (Address Record)**:
   - **Function**: Maps a domain name to an IPv4 address.

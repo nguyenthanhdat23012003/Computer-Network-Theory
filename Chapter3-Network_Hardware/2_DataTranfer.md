@@ -31,7 +31,7 @@ The process of decapsulating data on the destination machine occurs in reverse o
 
 This process ensures efficient encapsulation and decapsulation of data, enabling seamless communication between devices in the network.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 ### Đóng mở dữ liệu trên máy nguồn
 

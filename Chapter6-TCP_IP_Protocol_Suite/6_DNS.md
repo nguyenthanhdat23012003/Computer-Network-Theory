@@ -75,7 +75,7 @@ The DNS system includes several types of servers, each with a specific role in r
 Use the command `dig -t [record_type] [domain_name]` to check record information.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # DNS (Domain Name System)
 

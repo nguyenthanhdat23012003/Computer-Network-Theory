@@ -61,7 +61,7 @@ When the source and destination machines are on different networks, the process 
 
 - If the IP packet contains a broadcast address, the router blocks it from being forwarded to other networks. Similarly, if the IP packet contains a private address, the router prevents it from being forwarded to public areas.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Truyền thông tin trong mạng máy tính
 

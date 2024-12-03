@@ -70,7 +70,7 @@ Base64 is widely used in various applications, such as:
 Base64 is a simple yet effective algorithm for encoding binary data as ASCII text. Understanding how Base64 works allows you to apply it easily in data transmission and storage scenarios.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Base64
 

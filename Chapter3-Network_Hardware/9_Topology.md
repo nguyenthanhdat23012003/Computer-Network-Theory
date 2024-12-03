@@ -15,8 +15,8 @@ Network topology is the geometric arrangement of links and nodes in a computer n
 </p>
 
 
-   - **Description**: All terminal equipments connect to and share a common transmission line, which can be a twisted-pair or coaxial cable. Both ends of the cable are terminated with a **Terminator** to prevent signal loss.
-   - **Operation**: When an terminal equipment transmits data, it sends packets along the shared line. All devices receive the packet, but only the intended recipient processes it.
+   - **Description**: All end devices connect to and share a common transmission line, which can be a twisted-pair or coaxial cable. Both ends of the cable are terminated with a **Terminator** to prevent signal loss.
+   - **Operation**: When an end device transmits data, it sends packets along the shared line. All devices receive the packet, but only the intended recipient processes it.
    - **Advantages**:
      - Simple to set up and cost-effective.
      - Efficient for small networks with fewer devices and cables.
@@ -34,7 +34,7 @@ Network topology is the geometric arrangement of links and nodes in a computer n
 </p>
 
 
-   - **Description**: All terminal equipments are connected in a closed-loop. Repeaters are used to ensure signal integrity over longer distances.
+   - **Description**: All end devices are connected in a closed-loop. Repeaters are used to ensure signal integrity over longer distances.
    - **Operation**: Packets are transmitted in a specific direction through the loop, stopping at the intended device for processing.
    - **Advantages**:
      - Reduces collision as packets move in a single direction.
@@ -51,7 +51,7 @@ Network topology is the geometric arrangement of links and nodes in a computer n
 </p>
 
 
-   - **Description**: All terminal equipments are connected to a central device (hub or switch).
+   - **Description**: All end devices are connected to a central device (hub or switch).
    - **Operation**: The central device receives and distributes packets to the intended recipients.
    - **Advantages**:
      - High reliability; a single cable failure does not affect the entire network.
@@ -83,7 +83,7 @@ Network topology is the geometric arrangement of links and nodes in a computer n
 ### Hybrid Topology
 Combining multiple topologies to create a **hybrid network topology** that leverages the advantages and mitigates the disadvantages of each model.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 ## Cấu trúc liên mạng (Topology)
 

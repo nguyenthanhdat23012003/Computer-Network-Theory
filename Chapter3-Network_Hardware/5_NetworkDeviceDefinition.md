@@ -16,10 +16,10 @@
   - Simple electronic circuits for relaying and amplifying signals.
 
 ### Characteristics of Network Devices
-- Network devices do not support the installation of application software; they solely act as intermediaries for signal and data transfer. This differentiates them from terminal equipments.
+- Network devices do not support the installation of application software; they solely act as intermediaries for signal and data transfer. This differentiates them from end devices.
 - Network devices also host **protocol programs** to interact with other devices.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Khái niệm thiết bị mạng
 

@@ -87,7 +87,7 @@
       - All information about the session is deleted to ensure security and prevent session key reuse.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Self-contribute cho phần HTTP
 

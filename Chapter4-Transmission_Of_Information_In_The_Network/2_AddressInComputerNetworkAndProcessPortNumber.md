@@ -20,7 +20,7 @@ Each address type has a specific configuration method:
 - **IP Address:** Configured on the operating system.
 - **Port Number:** Configured through application software.
 
----
+
 
 ## 2. Port Numbers and Processes
 
@@ -36,11 +36,11 @@ To identify the process using the service, each process is assigned a unique num
 
 - Processes involved in communication must agree on port numbers. Both source and destination port values are included in the packet to ensure the data reaches the correct process.
 
----
+
 
 These concepts are critical for ensuring effective communication between processes and services in a network, enabling devices and applications to function efficiently.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Địa chỉ trong mạng máy tính và số cổng tiến trình
 
@@ -62,7 +62,7 @@ Mỗi loại địa chỉ có cách thức cấu hình riêng:
 - **Địa chỉ IP:** Phải được cấu hình trên hệ điều hành.
 - **Số cổng:** Cần được cấu hình thông qua phần mềm ứng dụng.
 
----
+
 
 ## 2. Số cổng và tiến trình
 
@@ -78,6 +78,6 @@ Trên mỗi thiết bị đầu cuối, nhiều tiến trình có thể đồng 
 
 - Các tiến trình tham gia vào quá trình truyền thông phải thỏa thuận về giá trị port. Các giá trị cổng nguồn và cổng đích đều được gửi kèm với gói tin để các máy có thể xác định được cần chuyển gói tin đến tiến trình nào.
 
----
+
 
 Những khái niệm này rất quan trọng trong việc đảm bảo khả năng giao tiếp giữa các tiến trình và dịch vụ trong mạng, giúp các thiết bị và ứng dụng có thể hoạt động hiệu quả.

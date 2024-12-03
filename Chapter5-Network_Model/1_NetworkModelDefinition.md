@@ -14,7 +14,7 @@ Each layer contains entities, which can be either software or hardware, that per
 
 Entities at the same layer share common features regarding the services they provide, though they may implement these services in different ways. An entity at one layer functions like software; the software of a higher layer calls the software of the layer immediately below through predefined APIs.
 
----
+
 
 ## Interaction in Layered Architecture
 
@@ -24,7 +24,7 @@ These functions do not call directly but interact via **interfaces** (special pr
 
 The concepts of **SDU (Service Data Unit)**, **PCI (Protocol Control Information)**, and **PDU (Protocol Data Unit)** mentioned earlier apply here.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Khái niệm mô hình mạng
 
@@ -40,7 +40,7 @@ Mỗi tầng chứa các thực thể, có thể là phần mềm hoặc phần 
 
 Các thực thể ở cùng tầng có những điểm chung về dịch vụ mà nó cung cấp, mặc dù chúng có thể thực hiện theo những cách khác nhau. Thực thể ở mỗi tầng giống như một phần mềm; phần mềm tầng trên gọi phần mềm tầng liền dưới thông qua API được định nghĩa sẵn.
 
----
+
 
 ## Tương tác trong kiến trúc phân tầng
 

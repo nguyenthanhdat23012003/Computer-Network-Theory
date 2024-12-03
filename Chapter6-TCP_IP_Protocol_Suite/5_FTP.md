@@ -80,7 +80,7 @@ There are two data channel modes: **active mode** and **passive mode**.
 **->** Active mode is simpler and easier to understand, but it may be blocked by firewalls or NAT at the client side.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Phần mềm truyền file và giao thức FTP
 

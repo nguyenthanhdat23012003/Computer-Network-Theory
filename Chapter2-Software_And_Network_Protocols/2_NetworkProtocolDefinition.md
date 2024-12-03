@@ -24,7 +24,7 @@ A **protocol specification** is a design document that describes a protocol in w
 - **Open protocols**: Protocols accessible and usable by anyone. Open protocols are described at [RFC Editor](https://www.rfc-editor.org/).
 - **Proprietary protocols**: Closed protocols known only to the developer. For example, Skype uses its proprietary protocol, possibly due to the P2P model it employs, enhancing security through proprietary design.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Khái niệm giao thức mạng
 

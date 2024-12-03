@@ -92,7 +92,7 @@ IPv4 addresses are divided into two types:
 The **default gateway** is the IP address of the router connected to the local computer network. It acts as the LAN's exit point, enabling devices in the network to communicate with external networks.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Địa chỉ logic của thiết bị đầu cuối - Địa chỉ IP
 

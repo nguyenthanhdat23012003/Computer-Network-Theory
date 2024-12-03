@@ -11,7 +11,7 @@ The most common classification is based on **network scale**. According to this 
 - **WAN** (Wide Area Network)
 - **Internet** (Global Network)
 
----
+
 
 ### Personal Area Network (PAN)
 - A network that allows devices to communicate within an individual's personal range.
@@ -21,7 +21,7 @@ The most common classification is based on **network scale**. According to this 
 - Another type of PAN arises when embedded medical devices such as pacemakers, insulin pumps, or hearing aids communicate with remote controls operated by users.
 - PANs can also be built using other short-range communication technologies, such as **RFID** on smart cards.
 
----
+
 
 ### Local Area Network (LAN)
 - A private network deployed within a building or area, typically spanning a few kilometers.
@@ -32,7 +32,7 @@ The most common classification is based on **network scale**. According to this 
   - Typically private networks, owned by households, schools, or institutions.
   - Range and transmission speed are determined by LAN technology, which often prioritizes speed over distance.
 
----
+
 
 ### Wide Area Network (WAN)
 - A network that can be deployed over large geographical areas, such as a province, region, country, or continent.
@@ -43,7 +43,7 @@ The most common classification is based on **network scale**. According to this 
   - Typically owned and operated by network/Internet service providers.
   - WAN technologies prioritize range and stability over transmission speed.
 
----
+
 
 ### Global Network Internet
 - A WAN that spans the entire world, with several differences from typical WANs:
@@ -51,11 +51,11 @@ The most common classification is based on **network scale**. According to this 
   - Not owned by any single individual or organization.
   - **Internet** is short for **internetwork**, often translated as **liên mạng** – a network of networks. Simply put, multiple interconnected networks form the Internet.
 
----
+
 
 > **Note**: The distinctions above mainly depend on the type of technology used, leading to differences in speed and network range. LAN technologies prioritize speed, while WAN technologies prioritize range.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Phân loại mạng máy tính
 
@@ -68,7 +68,7 @@ Tiêu chí phân loại thông dụng nhất là phân loại theo **quy mô m�
 - Mạng diện rộng **WAN** (Wide Area Network)
 - Mạng toàn cầu **Internet**
 
----
+
 
 ### Mạng cá nhân PAN (Personal Area Network)
 - Là mạng cho phép các thiết bị giao tiếp trong phạm vi một người.
@@ -78,7 +78,7 @@ Tiêu chí phân loại thông dụng nhất là phân loại theo **quy mô m�
 - Một loại PAN khác được hình thành khi thiết bị y tế nhúng như máy điều hòa nhịp tim, máy bơm insulin, hoặc máy trợ thính nói chuyện với điều khiển từ xa do người dùng vận hành.
 - PAN cũng có thể được xây dựng với các công nghệ khác giao tiếp trong phạm vi ngắn, như **RFID** trên thẻ thông minh.
 
----
+
 
 ### Mạng cục bộ LAN (Local Area Network)
 - Là mạng tư nhân triển khai trong phạm vi một tòa nhà hoặc khu vực, thường có phạm vi vài km.
@@ -89,7 +89,7 @@ Tiêu chí phân loại thông dụng nhất là phân loại theo **quy mô m�
   - Thường là mạng tư nhân, thuộc sở hữu của gia đình, trường học, cơ quan.
   - Phạm vi và tốc độ truyền dữ liệu do công nghệ LAN quyết định, trong đó công nghệ LAN thường ưu tiên tốc độ truyền hơn khoảng cách truyền.
 
----
+
 
 ### Mạng diện rộng WAN (Wide Area Network)
 - Là loại mạng có thể triển khai trên vùng địa lý rộng lớn, như một tỉnh, một khu vực, một quốc gia, hoặc cả lục địa.
@@ -100,7 +100,7 @@ Tiêu chí phân loại thông dụng nhất là phân loại theo **quy mô m�
   - Thường do các công ty cung cấp dịch vụ mạng/Internet sở hữu và vận hành.
   - Công nghệ mạng WAN thường ưu tiên phạm vi và độ ổn định hơn là tốc độ truyền.
 
----
+
 
 ### Mạng toàn cầu Internet
 - Là mạng WAN có phạm vi toàn thế giới, với một vài điểm khác biệt so với mạng WAN thông thường:
@@ -108,6 +108,6 @@ Tiêu chí phân loại thông dụng nhất là phân loại theo **quy mô m�
   - Không do một cá nhân hoặc tổ chức nào sở hữu.
   - **Internet** là từ viết tắt của **internetwork**, thường dịch là **liên mạng** – một mạng của các mạng. Hiểu đơn giản, nhiều mạng kết nối với nhau thì thành một liên mạng Internet.
 
----
+
 
 > **Lưu ý**: Phân chia như trên chủ yếu phụ thuộc vào loại công nghệ được sử dụng, từ đó dẫn đến sự khác biệt về tốc độ cũng như phạm vi của mạng. Các công nghệ mạng LAN thì ưu tiên tốc độ, còn mạng WAN thì ưu tiên phạm vi.

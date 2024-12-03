@@ -160,7 +160,7 @@ After data transmission is complete, the TCP connection is closed using a four-s
 
 After these steps, the TCP connection between Computer A and Computer B is terminated.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Giao thức TCP
 

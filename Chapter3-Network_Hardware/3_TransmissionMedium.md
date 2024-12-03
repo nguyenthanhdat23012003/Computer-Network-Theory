@@ -61,7 +61,7 @@ Fiber optics offer the best performance for speed, range, and reliability, but t
 - **Distortion**: Alteration of the signal's shape, often in signals comprising multiple frequencies.
 - **Noise**: Unwanted signals from the environment interfering with the original transmitted signal.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Môi trường truyền dẫn
 

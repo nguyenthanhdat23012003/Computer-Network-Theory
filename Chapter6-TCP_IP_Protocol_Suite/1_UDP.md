@@ -71,7 +71,7 @@ Suppose we have a data message "Hello, UDP!" sent from source port 12345 to dest
 - To mitigate UDP flood attacks, **high-capacity firewalls** are required to filter and block malicious packets while ensuring the stability of other services.
 
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Giao thức UDP (User Datagram Protocol)
 

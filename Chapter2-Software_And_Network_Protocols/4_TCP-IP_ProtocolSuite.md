@@ -2,11 +2,11 @@
 
 # TCP/IP Protocol Suite
 
-Terminal equipments simultaneously operate multiple protocols: application-related protocols, protocols providing end-to-end and host-to-host communication services, and hardware-level protocols.
+End devices simultaneously operate multiple protocols: application-related protocols, protocols providing end-to-end and host-to-host communication services, and hardware-level protocols.
 
 These protocols are not independent but interrelated, similar to how functions or methods are called in programming languages (application protocols call end-to-end protocols, which in turn call host-to-host protocols).
 
-A group of interrelated protocols on an terminal equipment forms a **protocol suite**, with the TCP/IP protocol suite being the most widely used today.
+A group of interrelated protocols on an end device forms a **protocol suite**, with the TCP/IP protocol suite being the most widely used today.
 
 ## Layers of the TCP/IP Protocol Suite
 
@@ -25,7 +25,7 @@ The TCP/IP protocol suite organizes protocols into groups called **layers**, wit
    - **IP Protocol**.
    - **IPv6 Protocol**.
 
-4. **Link Layer**: Contains protocols connecting terminal equipments to local networks:
+4. **Link Layer**: Contains protocols connecting end devices to local networks:
    - **ARP (Address Resolution Protocol)**: Resolves MAC addresses for given IP addresses.
    - **RARP (Reverse ARP)**: Resolves logical addresses for given physical addresses.
    - **NDP (Neighbor Discovery Protocol)**: IPv6 version of ARP.
@@ -53,7 +53,7 @@ Link layer protocols can also operate on hardware, unlike the other three layers
 
 ## Role of Ports
 
-On each terminal equipment, multiple processes may simultaneously use TCP or UDP communication services. Therefore, a mechanism is needed to differentiate data for specific processes.
+On each end device, multiple processes may simultaneously use TCP or UDP communication services. Therefore, a mechanism is needed to differentiate data for specific processes.
 
 TCP and UDP use **ports** to identify which process is utilizing their services. Ports range from 0 to \(2^{16} - 1\). Processes can select any unused port, or the operating system may assign one dynamically.
 
@@ -71,7 +71,7 @@ Processes must agree on port values. Both source and destination ports are inclu
 ### Port Functionality:
 When a device communicates with a specific service on a network, it sends data to an IP address and a specific port. The receiving system listens and processes requests on this port.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Bộ giao thức TCP/IP
 

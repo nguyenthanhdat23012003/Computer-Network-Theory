@@ -14,7 +14,7 @@
   - **Out-of-band control**: Control commands and data are sent through separate communication channels, as in FTP.
 - All application protocols use one of the two transport services: TCP or UDP. The choice depends on the application's requirements.
 
----
+
 
 ## Web Systems
 
@@ -36,7 +36,7 @@ HTTP operates on a client-server model, where web browsers (clients) send reques
   <img src="../image/Chapter6/Client_Server_Architecture.png" alt="Client_Server_Architecture">
 </p>
 
----
+
 
 ### How HTTP Works
 
@@ -55,7 +55,7 @@ HTTP operates on a client-server model, where web browsers (clients) send reques
 5. **Client Receives the HTTP Response**:
    - Once the client receives the response, the browser displays the requested content to the user.
 
----
+
 
 ### HTTP Packet Structure
 
@@ -86,7 +86,7 @@ An HTTP response consists of the following parts:
 
 With knowledge of these packet structures and programming with the TCP protocol, one can create a simple web server or a program to send HTTP requests to a web server.
 
----
+
 
 ## Data Transmission via HTTP
 
@@ -108,7 +108,7 @@ These formats are commonly used for data exchange between Web APIs and consuming
 - To transmit binary data, it must first be converted to text using a binary encoding algorithm like Base64. This algorithm encodes binary data into a text format, replacing unreadable characters with safe ones.
 - After encoding, the binary data is included in the HTTP body and transmitted like any other text data.
 
----
+
 
 ## Data Transmission Mechanisms in HTTP
 
@@ -127,7 +127,7 @@ Modern web browsers automatically use keep-alive connections for HTTP requests. 
 - In **non-persistent HTTP**, web applications minimize the number of files by bundling multiple JavaScript/CSS files into one large file.
 - In **persistent HTTP**, such bundling is unnecessary due to the reduced overhead from maintaining a single connection.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Hệ thống web và giao thức HTTP 
 

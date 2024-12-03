@@ -4,7 +4,7 @@
 
 The TCP/IP model is a reference model and conceptual framework for the suite of protocols collectively known as the TCP/IP protocol suite. It serves as the foundation for modern Internet functionality. Named after its two core protocols, TCP and IP, the model is structured into layers: Link Layer, Internet Layer, Transport Layer, and Application Layer.
 
----
+
 
 ## Layers of the TCP/IP Model
 
@@ -20,7 +20,7 @@ The TCP/IP model is a reference model and conceptual framework for the suite of 
 4. **Link Layer (or Network Interface Layer):**
    - Handles device drivers and hardware interfaces to connect computers to the transmission medium. Common protocols at this layer include ATM, Ethernet, PPP, Frame Relay, Token Ring, and FDDI. Most protocols at this layer are implemented in hardware, and devices like hubs/repeaters, bridges/switches operate at this layer.
 
----
+
 
 ## Comparison of OSI and TCP/IP Models
 
@@ -33,13 +33,13 @@ Both models have similarities in their layered structure, roles, and functions.
   <img src="../image/Chapter5/OSI_vs_TCPIP.png" alt="OSI_vs_TCPIP">
 </p>
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Mô hình TCP/IP
 
 Là một mô hình tham chiếu, bản mô hình hóa của tập hợp các giao thức, thường gọi là bộ giao thức TCP/IP, đóng vai trò nền tảng trong hoạt động Internet ngày nay. Được đặt tên theo hai giao thức nòng cốt của nó là TCP và IP, được thiết kế dựa theo kiến trúc phân tầng bao gồm các tầng: Tầng liên kết, tầng liên mạng, tầng giao vận và tầng ứng dụng.
 
----
+
 
 ## Các Tầng trong Mô hình TCP/IP
 
@@ -55,7 +55,7 @@ Là một mô hình tham chiếu, bản mô hình hóa của tập hợp các gi
 4. **Tầng liên kết (hoặc tầng giao diện mạng):**
    - Chịu trách nhiệm hoạt động với trình điều khiển thiết bị và các giao diện phần cứng để kết nối máy tính với môi trường truyền. Một số giao thức của tầng liên kết: ATM, Ethernet, PPP, Frame relay, Token Ring, FDDI. Các giao thức ở tầng này hầu hết thực thi trong phần cứng; các thiết bị mạng như hub/repeater, bridge/switch hoạt động ở tầng liên kết.
 
----
+
 
 ## So sánh OSI và TCP/IP
 

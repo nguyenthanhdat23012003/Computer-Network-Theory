@@ -17,7 +17,7 @@ The **browser** will:
 
 In such applications, the **computer network** acts as the medium for the components to exchange data. Network applications use network services supported by the operating system to send or receive data.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Mạng máy tính và phần mềm ứng dụng
 

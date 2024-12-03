@@ -34,7 +34,7 @@ The OSI model is not a protocol but a framework for recognizing and designing a 
    - **Role:** Provides direct network services to user applications. This layer includes protocols and services that users interact with directly, such as HTTP, FTP, SMTP, and DNS.
    - **Data Unit:** Data (application-level data).
 
----
+
 
 ## Data Flow Through OSI Layers
 
@@ -58,7 +58,7 @@ The OSI model is not a protocol but a framework for recognizing and designing a 
 6. **Layer 6 (Presentation):** Data is decoded and decompressed if necessary.
 7. **Layer 7 (Application):** Data is delivered to the user application.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Mô hình kết nối các hệ thống mở OSI
 
@@ -94,7 +94,7 @@ Mô hình OSI không phải một giao thức, nó là một mô hình để nh�
    - **Vai trò:** Cung cấp các dịch vụ mạng trực tiếp cho các ứng dụng người dùng. Tầng này bao gồm các giao thức và dịch vụ mà người dùng cuối tương tác trực tiếp như HTTP, FTP, SMTP, và DNS.
    - **Dữ liệu:** Data (dữ liệu ứng dụng).
 
----
+
 
 ## Luồng đi của dữ liệu qua các tầng trong mô hình OSI
 

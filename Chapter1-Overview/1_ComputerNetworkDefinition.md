@@ -13,7 +13,7 @@ A system consisting of at least two computers connected to exchange information 
 ### A Computer Network Includes:
 - Terminal equipments, transmission media, network devices, and network protocols.
 
----
+
 
 ### Terminal Equipments (I/O Devices)
 - Any device capable of generating data for the user.
@@ -21,7 +21,7 @@ A system consisting of at least two computers connected to exchange information 
   - **Physical Connection**: Established through transmission media and network devices.
   - **Logical Connection**: Established through network protocols.
 
----
+
 
 ### Transmission Media
 - Enables physical signals to travel from one device to another.
@@ -31,7 +31,7 @@ A system consisting of at least two computers connected to exchange information 
     - Copper cables - electrical pulses.
     - Fiber optic cables - light signals.
 
----
+
 
 ### Network Devices
 - Common computers placed along the path of information, performing various roles: connecting terminal equipments to the medium and to each other, or connecting networks together.
@@ -47,19 +47,19 @@ A system consisting of at least two computers connected to exchange information 
 - **Access Point**: Connects terminal equipments to a network without wires.
 - **Firewall**: Protects the network.
 
----
+
 
 ### Network Protocol
 - A set of rules governing the process of information exchange in a network.
 
----
+
 
 ### Network Models
 - In computer networks, numerous hardware and software components operate together. A network model is necessary to systematize these components.
 - A network model allows categorization of the components in a network system, defines their roles and functions, and describes how they interact.
 - Two common models are **OSI** and **TCP/IP**.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Khái niệm mạng máy tính
 
@@ -74,7 +74,7 @@ Là một hệ thống bao gồm ít nhất hai máy tính được kết nối 
 ### Mạng máy tính bao gồm:
 - Các thiết bị đầu cuối, môi trường truyền dẫn, các thiết bị mạng, các giao thức mạng.
 
----
+
 
 ### Thiết bị đầu cuối (I/O device)
 - Là bất kỳ thiết bị nào có thể phát sinh dữ liệu đến người dùng.
@@ -82,7 +82,7 @@ Là một hệ thống bao gồm ít nhất hai máy tính được kết nối 
   - **Kết nối vật lý**: Được thực hiện thông qua môi trường truyền dẫn và các thiết bị mạng.
   - **Kết nối logic**: Được thực hiện thông qua các giao thức mạng.
 
----
+
 
 ### Môi trường truyền dẫn (transmission media)
 - Giúp tín hiệu vật lý có thể truyền từ thiết bị này đến thiết bị khác.
@@ -92,7 +92,7 @@ Là một hệ thống bao gồm ít nhất hai máy tính được kết nối 
     - Các loại cáp đồng - truyền xung điện.
     - Cáp quang - truyền tín hiệu ánh sáng.
 
----
+
 
 ### Thiết bị mạng (network device)
 - Là những máy tính thông dụng nằm trên đường đi của thông tin và đảm nhiệm nhiều vai trò khác nhau: kết nối các thiết bị đầu cuối với môi trường truyền và với nhau, kết nối các mạng với nhau.
@@ -108,12 +108,12 @@ Là một hệ thống bao gồm ít nhất hai máy tính được kết nối 
 - **Access point**: Kết nối các thiết bị đầu cuối vào một mạng không dùng dây dẫn.
 - **Firewall**: Giúp bảo vệ mạng.
 
----
+
 
 ### Giao thức mạng (network protocol)
 - Là tập hợp các quy tắc điều khiển quá trình truyền thông tin trong mạng.
 
----
+
 
 ### Mô hình mạng (network model)
 - Trong mạng máy tính có rất nhiều thành phần cứng và mềm cùng hoạt động, để hệ thống hóa các thành phần này cần đưa ra một mô hình mạng.

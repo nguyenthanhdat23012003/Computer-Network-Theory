@@ -2,20 +2,20 @@
 
 # Protocols and Communication Services
 
-Applications operate on terminal equipments. Terminal equipments can be seen as the **environment** for applications to function. Applications use the **communication services** of the operating system on terminal equipments to exchange information between components.
+Applications operate on end devices. End devices can be seen as the **environment** for applications to function. Applications use the **communication services** of the operating system on end devices to exchange information between components.
 
 Communication services are tied to protocols. Communication protocols are implemented as software, which applications can invoke in the same way they call system functions.
 
 ## Two Types of Communication Services
 
 1. **End-to-End Communication**: Refers to applications exchanging data with each other.
-2. **Host-to-Host Communication**: Refers to terminal equipments exchanging data with each other.
+2. **Host-to-Host Communication**: Refers to end devices exchanging data with each other.
 
 End-to-end communication services must rely on host-to-host communication services. In other words, host-to-host communication services are the foundation for end-to-end communication services.
 
 **Example**: Sending a letter to an apartment in a large building involves two services: the postal service ensures the letter reaches the building (host-to-host), while the building's internal mail system distributes the letter to the specific apartment (end-to-end).
 
-To perform host-to-host communication, both terminal equipments and routers must share a common protocol. This protocol is implemented as system software on terminal equipments and as part of the specialized operating system software running on routers.
+To perform host-to-host communication, both end devices and routers must share a common protocol. This protocol is implemented as system software on end devices and as part of the specialized operating system software running on routers.
 
 ## Types of Communication
 
@@ -27,7 +27,7 @@ To perform host-to-host communication, both terminal equipments and routers must
   - **Connection-Oriented Communication** requires the two parties to establish a connection before transmitting data.
   - **Connectionless Communication** does not require a prior connection setup.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Giao thức và dịch vụ truyền thông
 

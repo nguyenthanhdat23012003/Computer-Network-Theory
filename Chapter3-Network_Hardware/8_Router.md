@@ -46,7 +46,7 @@
 - They connect different networks, enabling communication between devices in separate networks.
 - Routers play a key role in building the global Internet by interconnecting millions of WANs and LANs.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 ## Router (Bộ định tuyến)
 

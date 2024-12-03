@@ -6,7 +6,7 @@ When developing network software, an important consideration is the **role of co
 
 A **network application model (architecture)** defines the division of roles and tasks of components in a network application system and how they are interconnected. There are two main models:
 
----
+
 
 ### Client-Server Model
 - The application is divided into two parts:
@@ -17,7 +17,7 @@ A **network application model (architecture)** defines the division of roles and
   - The server must operate on a host machine with a **fixed address** that clients can identify. This address is called an **IP address**.
   - Client programs do not communicate directly with each other but through the server.
 
----
+
 
 ### Peer-to-Peer (P2P) Model
 - All components in the system have the same role; there is no dedicated server.
@@ -27,7 +27,7 @@ A **network application model (architecture)** defines the division of roles and
   - High scalability.
   - Cost advantages, as it does not require expensive server infrastructure or high bandwidth.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Mô hình ứng dụng mạng
 
@@ -35,7 +35,7 @@ Khi phát triển một phần mềm mạng, một vấn đề quan trọng là 
 
 **Mô hình (kiến trúc) ứng dụng mạng** là sự phân chia vai trò và nhiệm vụ của các thành phần trong một hệ thống phần mềm ứng dụng mạng, cũng như cách thức chúng liên kết với nhau. Có hai mô hình chính:
 
----
+
 
 ### Mô hình Client-Server
 - Ứng dụng được chia làm hai phần:
@@ -46,7 +46,7 @@ Khi phát triển một phần mềm mạng, một vấn đề quan trọng là 
   - Server phải hoạt động trên máy chủ có **địa chỉ cố định** mà client có thể xác định được. Địa chỉ này gọi là **địa chỉ IP**.
   - Các chương trình client không giao tiếp trực tiếp với nhau mà thông qua server.
 
----
+
 
 ### Mô hình Peer-to-Peer (P2P)
 - Tất cả các thành phần trong hệ thống đều có vai trò giống nhau, không có server chuyên biệt.

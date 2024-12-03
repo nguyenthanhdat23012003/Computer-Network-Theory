@@ -12,7 +12,7 @@ Transmission modes describe the direction of information flow between two device
 
 - **Full-Duplex Mode:** Enables simultaneous bidirectional communication. Devices can send and receive data at the same time.
 
----
+
 
 ## 2. Transmission Methods
 
@@ -24,7 +24,7 @@ Transmission methods describe the number of devices involved in the communicatio
 
 - **Multicast:** Information is transmitted from one device to a group of devices. This method is often used by routers and routing protocols.
 
----
+
 
 ## 3. Collision and Collision Domain
 
@@ -34,7 +34,7 @@ Transmission methods describe the number of devices involved in the communicatio
 
 - **Broadcast Domain:** A network area where data frames can move freely without restriction. Devices within the same broadcast domain can exchange data frames.
 
----
+
 
 ## 4. Quality of Information Transmission
 
@@ -54,11 +54,11 @@ Transmission methods describe the number of devices involved in the communicatio
   
   - **Queueing Delay:** Time spent in queues at network nodes.
 
----
+
 
 These concepts are crucial for designing and optimizing network systems, ensuring efficiency and reliability in information transmission.
 
-<div style="border-top: 2px solid white; margin: 20px 0;"></div>
+---
 
 # Chế độ, phương thức và chất lượng truyền thông tin
 
@@ -72,7 +72,7 @@ Chế độ truyền thông tin thể hiện chiều truyền thông tin giữa 
 
 - **Chế độ song công (Full-duplex):** Cho phép truyền thông tin hai chiều đồng thời. Thiết bị có thể gửi và nhận dữ liệu tại cùng một thời điểm.
 
----
+
 
 ## 2. Phương thức truyền thông tin (Transmission method)
 
@@ -84,7 +84,7 @@ Phương thức truyền thông tin mô tả số lượng thiết bị tham gia
 
 - **Multicast:** Truyền thông tin từ một thiết bị tới một nhóm thiết bị khác. Phương thức này thường được sử dụng bởi router và các giao thức định tuyến.
 
----
+
 
 ## 3. Xung đột và miền xung đột
 
@@ -94,7 +94,7 @@ Phương thức truyền thông tin mô tả số lượng thiết bị tham gia
 
 - **Miền quảng bá (Broadcast domain):** Khu vực mạng nơi frame dữ liệu di chuyển tự do mà không bị ngăn chặn. Các thiết bị trong cùng một miền quảng bá có thể gửi frame dữ liệu cho nhau.
 
----
+
 
 ## 4. Chất lượng truyền thông tin
 
@@ -114,6 +114,6 @@ Phương thức truyền thông tin mô tả số lượng thiết bị tham gia
 
   - **Trễ hàng đợi:** Thời gian xử lý tại các hàng đợi trong các node mạng.
 
----
+
 
 Những khái niệm này rất quan trọng trong việc thiết kế và tối ưu hóa các hệ thống mạng, giúp đảm bảo tính hiệu quả và độ tin cậy trong việc truyền thông tin.

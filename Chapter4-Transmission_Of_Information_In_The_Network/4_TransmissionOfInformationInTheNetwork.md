@@ -1,25 +1,25 @@
 **[Vietnamese Below]**
 
-# Information Transmission in Computer Networks
+## Information Transmission in Computer Networks
 
 In a network system, there are many different addresses used by protocols at various levels. 
 - When TCP or UDP encapsulates its PDU, it requires the port number of the destination process and the port number of the sending process.
 - When IP encapsulates a packet, it requires the IP address of the source and destination machines.
 - When Ethernet encapsulates a frame, it requires the MAC address of the network card on the source and destination machines within the LAN.
 
-## Port Address
+### Port Address
 
 For scenarios requiring a port address, the port is determined as follows:
 - The port number of the process must be provided by the application itself. This is one of the agreements within the application layer protocol. When initializing a socket, the application must provide the port number of the destination process.
 - The source port is assigned by the operating system to the process, either temporarily or permanently, depending on the program's requirements.
 
-## IP Address
+### IP Address
 
 For scenarios requiring an IP address:
 - The source IP address is obtained from the IP configuration of the corresponding network interface.
 - The destination IP address must be provided by the application program. When initializing a socket, the application must supply this destination IP address.
 
-## MAC Address
+### MAC Address
 
 For scenarios requiring a MAC address:
 - The source MAC address is obtained directly from the network card.
@@ -27,11 +27,11 @@ For scenarios requiring a MAC address:
 
 Terminal equipments have two types of addresses simultaneously: a logical IP address and a physical MAC address. The IP address enables host-to-host communication across different networks, while the MAC address enables the transmission of data frames within a single LAN (within the same broadcast domain).
 
-## ARP Protocol
+### ARP Protocol
 
 ARP (Address Resolution Protocol) is a mandatory protocol within the TCP/IP suite. It is responsible for discovering a device's MAC address based on its IP address.
 
-### Example
+#### Example
 
 Two computers, A and B, are connected to the same switch and belong to the same IP range. When computer A wants to send data to computer B, its network card's Ethernet layer must create a frame before sending it over the medium. To create the frame, the MAC address of the destination is needed, while the data only contains the IP address.
 
@@ -63,26 +63,26 @@ When the source and destination machines are on different networks, the process 
 
 ---
 
-# Truyền thông tin trong mạng máy tính
+## Truyền thông tin trong mạng máy tính
 
 Trong hệ thống mạng có tất nhiều địa chỉ khác nhau dùng bởi các giao thức ở các cấp độ. 
 - Khi TCP hoặc UDP đóng gói PDU của mình đòi hỏi số cổng của tiến trình chạy trên máy đích và số cổng của chính tiến trình đang gửi dữ liệu. 
 - Khi IP đóng gói packet cần đến địa chỉ IP của máy nguồn và máy đích. 
 - Khi Ethernet đóng gói frame cần đến địa chỉ MAC của card mạng máy nguồn và máy đích trong LAN.
 
-## Địa chỉ Port
+### Địa chỉ Port
 
 Với trường hợp đòi hỏi port, port sẽ được lấy như sau:
 - Port của tiến trình phải do chính chương trình ứng dụng cung cấp. Đây là một trong số các thỏa thuận trong giao thức tầng ứng dụng. Trong khi khởi tạo socket, ứng dụng phải cung cấp số cổng của tiến trình đích.
 - Port nguồn do hệ điều hành cung cấp cho tiến trình, có thể cấp tạm thời hoặc lâu dài, tùy thuộc vào chương trình yêu cầu.
 
-## Địa chỉ IP
+### Địa chỉ IP
 
 Với trường hợp đòi hỏi địa chỉ IP:
 - Địa chỉ IP của máy nguồn được lấy từ cấu hình IP của giao diện mạng tương ứng.
 - Địa chỉ IP của máy đích phải do chương trình ứng dụng cung cấp, trong khi khởi tạo socket, ứng dụng phải cung cấp địa chỉ IP đích này.
 
-## Địa chỉ MAC
+### Địa chỉ MAC
 
 Với trường hợp địa chỉ MAC:
 - Địa chỉ MAC nguồn được lấy từ chính card mạng.
@@ -90,11 +90,11 @@ Với trường hợp địa chỉ MAC:
 
 Các thiết bị đầu cuối đồng thời có hai loại địa chỉ: địa chỉ logic IP và địa chỉ vật lý MAC. Địa chỉ IP cho phép truyền thông host-to-host nằm trong các mạng khác nhau, còn địa chỉ MAC cho phép truyền thông frame dữ liệu trong nội bộ một mạng LAN (trong cùng một miền quảng bá).
 
-## Giao thức ARP
+### Giao thức ARP
 
 ARP (Address Resolution Protocol) là một giao thức bắt buộc của bộ giao thức TCP/IP. Giao thức này có nhiệm vụ tìm hiểu địa chỉ MAC của thiết bị thông qua địa chỉ IP của nó.
 
-### Ví dụ
+#### Ví dụ
 
 Có hai máy tính A và B đều kết nối với cùng một switch, nằm cùng dải địa chỉ IP. Khi này máy A muốn chuyển dữ liệu cho máy B sẽ cần Ethernet ở card mạng tạo frame trước khi đưa lên đường truyền, và để tạo frame cần địa chỉ MAC của máy đích, trong khi data chỉ chứa địa chỉ IP.
 

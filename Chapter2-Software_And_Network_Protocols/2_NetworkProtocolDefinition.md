@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Network Protocols Concept
+## Network Protocols Concept
 
 A **network protocol** is a set of rules governing the communication process that the components of a network system must follow when participating in communication.
 
@@ -26,7 +26,7 @@ A **protocol specification** is a design document that describes a protocol in w
 
 ---
 
-# Khái niệm giao thức mạng
+## Khái niệm giao thức mạng
 
 **Giao thức mạng** là tập hợp các quy tắc điều khiển quá trình truyền thông mà các thành phần của hệ thống mạng phải tuân theo khi tham gia vào quá trình truyền thông.
 

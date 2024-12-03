@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Network Device Concept
+## Network Device Concept
 
 - **Network Devices**: While two computers can use a twisted-pair cable to form a basic computer network, such a network is very limited with minimal practical applications. The need to expand networks has led to the development of network devices, which act as intermediaries to extend computer networks.
 - Network expansion can occur in various ways:
@@ -21,7 +21,7 @@
 
 ---
 
-# Khái niệm thiết bị mạng
+## Khái niệm thiết bị mạng
 
 - **Thiết bị mạng**: Hai máy tính có thể sử dụng cáp xoắn để tạo thành một mạng máy tính cơ bản, nhưng mạng này rất hạn chế và ít ứng dụng thực tế. Nhu cầu mở rộng mạng máy tính đã dẫn đến sự ra đời của các thiết bị mạng, hoạt động như trung gian giúp mở rộng mạng lưới máy tính.
 - Mở rộng mạng máy tính có thể theo nhiều cách:

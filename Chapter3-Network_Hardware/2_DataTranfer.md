@@ -1,8 +1,8 @@
 **[Vietnamese Below]**
 
-### Data Encapsulation and Decapsulation on the Source Machine
+## Data Encapsulation and Decapsulation on the Source Machine
 
-#### I. Data Flow
+### I. Data Flow
 The process of encapsulating data on the source machine proceeds as follows:
 
 1. **Data Preparation**: The application program prepares data in the form of bytes.
@@ -20,7 +20,7 @@ The process of encapsulating data on the source machine proceeds as follows:
 </p>
 
 
-#### II. Data Decapsulation on the Destination Machine
+### II. Data Decapsulation on the Destination Machine
 The process of decapsulating data on the destination machine occurs in reverse order:
 
 1. **Signal Conversion**: The network card converts the received signals into frames.
@@ -33,9 +33,9 @@ This process ensures efficient encapsulation and decapsulation of data, enabling
 
 ---
 
-### Đóng mở dữ liệu trên máy nguồn
+## Đóng mở dữ liệu trên máy nguồn
 
-#### I. Luồng đi của dữ liệu
+### I. Luồng đi của dữ liệu
 Quá trình đóng gói dữ liệu trên máy nguồn diễn ra như sau:
 
 1. **Chuẩn bị dữ liệu**: Chương trình ứng dụng chuẩn bị dữ liệu ở dạng byte.
@@ -53,7 +53,7 @@ Quá trình đóng gói dữ liệu trên máy nguồn diễn ra như sau:
 </p>
 
 
-#### II. Quá trình mở gói dữ liệu trên máy đích
+### II. Quá trình mở gói dữ liệu trên máy đích
 Quá trình mở gói dữ liệu trên máy đích diễn ra theo thứ tự ngược lại:
 
 1. **Chuyển tín hiệu**: Tín hiệu được card mạng chuyển thành frame.

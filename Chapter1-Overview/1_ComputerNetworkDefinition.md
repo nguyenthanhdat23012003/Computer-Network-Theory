@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Computer Network Concepts
+## Computer Network Concepts
 
 ### Computer Networking
 A system consisting of at least two computers connected to exchange information and share resources.
@@ -61,7 +61,7 @@ A system consisting of at least two computers connected to exchange information 
 
 ---
 
-# Khái niệm mạng máy tính
+## Khái niệm mạng máy tính
 
 ### Mạng máy tính (networking)
 Là một hệ thống bao gồm ít nhất hai máy tính được kết nối với nhau để trao đổi thông tin và chia sẻ tài nguyên.

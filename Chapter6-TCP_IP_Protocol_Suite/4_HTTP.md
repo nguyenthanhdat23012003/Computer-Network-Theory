@@ -1,14 +1,14 @@
 **[Vietnamese Below]**
 
-# Self-Contribution on HTTP
+## Self-Contribution on HTTP
 
-## HTTP is Stateless, but not Sessionless:
+### HTTP is Stateless, but not Sessionless:
 
 - HTTP is considered **stateless** because each HTTP request from the client (browser user) to the server (host) is treated as independent. This means each HTTP request does not retain state information from the previous one. The server processes the current request without knowing about earlier requests from the same client.
 - Although HTTP is stateless, web applications often need to store and manage user **session** information. A session is a mechanism that allows retaining a user's state during a specific time period while they interact with the web application. Session information usually includes variables like login information, shopping cart contents, language preferences, etc.
 - The session mechanism is often implemented using storage methods such as **cookies** or **URL rewriting**. Whenever a user accesses the web application, a session ID is assigned to the user, and information related to this session is stored (usually server-side) and maintained across HTTP requests.
 
-## HTTPS Protocol
+### HTTPS Protocol
 
 - HTTP operates on a Client–Server model. Website access is carried out through communication between these two entities. When you visit a website via HTTP, the browser establishes a connection to the website’s server using the IP address provided by the DNS system. After receiving the request, the server sends back the corresponding commands to render the website, including content such as text, images, videos, audio, etc.
 - During the connection and data exchange process, your browser inherently trusts the IP address as being from the website’s server you intended to access **without any authentication measures**. The information transmitted via HTTP (including IP address, data entered into the website, etc.) is also **not encrypted or secured**. This vulnerability is exploited by hackers to steal user information, commonly referred to as **sniffing attacks**.
@@ -32,7 +32,7 @@
     - **HTTPS Response**: The above process is repeated for the HTTPS response, with data from the web server encrypted by TLS and sent back to the client.
 - Through the TLS handshake process and encryption throughout the data transmission process, HTTPS ensures user data is safely protected during network transmission, preventing attacks such as eavesdropping and data tampering.
 
-## SSL Protocol
+### SSL Protocol
 
 - SSL is a security protocol providing privacy, authentication, and integrity on the Internet.
 - SSL uses data encryption to ensure sensitive information is not exposed while transmitted over the network.
@@ -89,15 +89,15 @@
 
 ---
 
-# Self-contribute cho phần HTTP
+## Self-contribute cho phần HTTP
 
-## HTTP là stateless, nhưng không sessionless:
+### HTTP là stateless, nhưng không sessionless:
 
 - HTTP được coi là **stateless** vì mỗi yêu cầu HTTP từ phía client (người dùng trình duyệt) đến server (máy chủ) được xem như độc lập với nhau. Điều này có nghĩa là mỗi yêu cầu HTTP không giữ lại thông tin trạng thái (state) từ yêu cầu trước đó. Server chỉ xử lý yêu cầu hiện tại mà không có thông tin về các yêu cầu trước đó từ cùng một client.
 - Mặc dù HTTP là stateless, nhưng các ứng dụng web thường cần lưu trữ và quản lý thông tin phiên làm việc (**session**) của người dùng. Phiên làm việc là một cơ chế cho phép lưu trữ trạng thái của một người dùng trong một khoảng thời gian nhất định khi họ tương tác với ứng dụng web. Thông tin trong phiên thường bao gồm các biến như thông tin đăng nhập, giỏ hàng, các tùy chọn ngôn ngữ, ...
 - Cơ chế session thường được triển khai bằng cách sử dụng các cơ chế lưu trữ như **cookies** hoặc **URL rewriting**. Mỗi khi người dùng truy cập vào ứng dụng web, một ID phiên làm việc (session ID) sẽ được gán cho người dùng, và thông tin liên quan đến phiên làm việc này sẽ được lưu trữ (thường là trên server) và duy trì qua các yêu cầu HTTP.
 
-## Giao thức HTTPS
+### Giao thức HTTPS
 
 - HTTP hoạt động theo mô hình Client (máy khách) – Server (máy chủ). Việc truy cập website được tiến hành dựa trên các giao tiếp giữa 2 đối tượng trên. Khi bạn truy cập một trang web qua giao thức HTTP, trình duyệt sẽ thực hiện các phiên kết nối đến server của trang web đó thông qua địa chỉ IP do hệ thống phân giải tên miền DNS cung cấp. Máy chủ sau khi nhận lệnh, sẽ trả về lệnh tương ứng giúp hiển thị website, bao gồm các nội dung như: văn bản, ảnh, video, âm thanh,…
 - Trong quá trình kết nối và trao đổi thông tin, trình duyệt của bạn sẽ mặc nhiên thừa nhận địa chỉ IP đó đến từ server của chính website mà bạn muốn truy cập mà **không hề có biện pháp xác thực nào**. Các thông tin được gửi đi qua giao thức HTTP (bao gồm địa chỉ IP, các thông tin mà bạn nhập vào website…) cũng **không hề được mã hóa và bảo mật**. Đây chính là kẽ hở mà nhiều hacker đã lợi dụng để đánh cắp thông tin người dùng, thường được gọi là **tấn công sniffing**.
@@ -121,7 +121,7 @@ Thực chất, đây chính là giao thức HTTP nhưng tích hợp thêm **Ch�
     - **HTTPS Response**: Quá trình trên được lặp lại cho HTTPS response, với dữ liệu từ máy chủ web được mã hóa bằng TLS và sau đó được gửi trở lại cho máy khách.
 - Thông qua quá trình TLS handshake và việc sử dụng mã hóa trong toàn bộ quá trình truyền tải, HTTPS đảm bảo rằng dữ liệu của người dùng được bảo vệ an toàn trên đường truyền mạng, ngăn chặn các cuộc tấn công như nghe trộm và can thiệp dữ liệu.
 
-## Giao thức SSL
+### Giao thức SSL
 
 - Là một giao thức bảo mật cung cấp sa quyền riêng tư, xác thực và tính toàn vẹn trên Internet
 - Sử dụng mã hóa dữ liệu để đảm bảo các thông tin nhạy cảm không bị lộ khi lan truyền qua mạng

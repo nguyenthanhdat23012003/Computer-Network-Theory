@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Network Application Models
+## Network Application Models
 
 When developing network software, an important consideration is the **role of components in the system**.
 
@@ -29,7 +29,7 @@ A **network application model (architecture)** defines the division of roles and
 
 ---
 
-# Mô hình ứng dụng mạng
+## Mô hình ứng dụng mạng
 
 Khi phát triển một phần mềm mạng, một vấn đề quan trọng là **vai trò của các thành phần trong hệ thống**.
 

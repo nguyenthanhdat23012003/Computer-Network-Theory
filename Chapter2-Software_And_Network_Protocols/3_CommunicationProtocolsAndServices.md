@@ -1,12 +1,12 @@
 **[Vietnamese Below]**
 
-# Protocols and Communication Services
+## Protocols and Communication Services
 
 Applications operate on end devices. End devices can be seen as the **environment** for applications to function. Applications use the **communication services** of the operating system on end devices to exchange information between components.
 
 Communication services are tied to protocols. Communication protocols are implemented as software, which applications can invoke in the same way they call system functions.
 
-## Two Types of Communication Services
+### Two Types of Communication Services
 
 1. **End-to-End Communication**: Refers to applications exchanging data with each other.
 2. **Host-to-Host Communication**: Refers to end devices exchanging data with each other.
@@ -17,7 +17,7 @@ End-to-end communication services must rely on host-to-host communication servic
 
 To perform host-to-host communication, both end devices and routers must share a common protocol. This protocol is implemented as system software on end devices and as part of the specialized operating system software running on routers.
 
-## Types of Communication
+### Types of Communication
 
 - **Reliable Communication** and **Unreliable Communication**:
   - **Reliable Communication** ensures that data is transmitted completely and in the correct order.
@@ -29,13 +29,13 @@ To perform host-to-host communication, both end devices and routers must share a
 
 ---
 
-# Giao thức và dịch vụ truyền thông
+## Giao thức và dịch vụ truyền thông
 
 Ứng dụng hoạt động trên các thiết bị đầu cuối. Các thiết bị đầu cuối có thể được xem là **môi trường** cho các ứng dụng hoạt động. Các ứng dụng sử dụng **dịch vụ truyền thông** của hệ điều hành trên thiết bị đầu cuối để truyền thông tin giữa các thành phần.
 
 Các dịch vụ truyền thông gắn với các giao thức. Các giao thức truyền thông được thực thi ở dạng phần mềm, mà ứng dụng có thể gọi đến như kiểu gọi một hàm của hệ thống.
 
-## Hai loại dịch vụ truyền thông
+### Hai loại dịch vụ truyền thông
 
 1. **Truyền thông end-to-end**: Là việc các ứng dụng truyền dữ liệu cho nhau.
 2. **Truyền thông host-to-host**: Là việc các thiết bị đầu cuối truyền dữ liệu cho nhau.
@@ -46,7 +46,7 @@ Dịch vụ truyền thông end-to-end phải sử dụng tới dịch vụ truy
 
 Để thực hiện nhiệm vụ truyền host-to-host, trên cả thiết bị đầu cuối và router cần phải cài chung một giao thức. Giao thức này được thực thi dưới dạng phần mềm hệ thống trên thiết bị đầu cuối và là một phần mềm chạy hệ điều hành chuyên dụng của router.
 
-## Các loại truyền thông
+### Các loại truyền thông
 
 - **Truyền thông không tin cậy** và **truyền thông tin cậy**: 
   - **Truyền thông tin cậy** là dịch vụ truyền thông trong đó giao thức đảm bảo rằng dữ liệu được truyền đi đầy đủ và đúng thứ tự.

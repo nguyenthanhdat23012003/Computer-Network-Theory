@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# TCP/IP Protocol Suite
+## TCP/IP Protocol Suite
 
 End devices simultaneously operate multiple protocols: application-related protocols, protocols providing end-to-end and host-to-host communication services, and hardware-level protocols.
 
@@ -8,7 +8,7 @@ These protocols are not independent but interrelated, similar to how functions o
 
 A group of interrelated protocols on an end device forms a **protocol suite**, with the TCP/IP protocol suite being the most widely used today.
 
-## Layers of the TCP/IP Protocol Suite
+### Layers of the TCP/IP Protocol Suite
 
 The TCP/IP protocol suite organizes protocols into groups called **layers**, with a total of four layers:
 
@@ -41,7 +41,7 @@ While many protocols exist, the TCP/IP protocol suite requires implementation of
 
 IPv6 also requires **NDP**, **ICMPv6**, and **MLD**. Application layer protocols are optional as they are bundled with applications.
 
-## Protocol Functionality
+### Protocol Functionality
 
 Applications include specific protocols, integrated as part of the program module (e.g., **HTTP** is part of web software).
 
@@ -51,7 +51,7 @@ Transport and internet layer protocols process data as **byte streams**. Convert
 
 Link layer protocols can also operate on hardware, unlike the other three layers.
 
-## Role of Ports
+### Role of Ports
 
 On each end device, multiple processes may simultaneously use TCP or UDP communication services. Therefore, a mechanism is needed to differentiate data for specific processes.
 
@@ -59,21 +59,21 @@ TCP and UDP use **ports** to identify which process is utilizing their services.
 
 Processes must agree on port values. Both source and destination ports are included in TCP/UDP packets to ensure proper routing to the intended process.
 
-### Key Points About Ports:
+#### Key Points About Ports:
 - Logical connection points for network data sent and received via network protocols.
 - Ports are identified by integers ranging from 0 to 65535 and are used to distinguish services and manage connections.
 
-### Types of Ports:
+#### Types of Ports:
 1. **Well-known Ports**: Range 0–1023, reserved for standard system services and protocols.
 2. **Registered Ports**: Range 1024–49151, registered for specific applications by organizations.
 3. **Dynamic/Private Ports**: Range 49152–65535, dynamically assigned for temporary connections.
 
-### Port Functionality:
+#### Port Functionality:
 When a device communicates with a specific service on a network, it sends data to an IP address and a specific port. The receiving system listens and processes requests on this port.
 
 ---
 
-# Bộ giao thức TCP/IP
+## Bộ giao thức TCP/IP
 
 Trên thiết bị đầu cuối có đồng thời nhiều giao thức cùng hoạt động: các giao thức gắn với phần mềm ứng dụng, những giao thức cung cấp dịch vụ truyền thông end-to-end và host-to-host, ngoài ra còn có các giao thức gắn với phần cứng. 
 
@@ -81,7 +81,7 @@ Các giao thức này không hoạt động độc lập mà có sự quan hệ 
 
 Một nhóm các giao thức trên thiết bị đầu cuối có quan hệ với nhau như vậy tạo thành một **bộ giao thức**, hiện nay thì bộ giao thức TCP/IP là bộ giao thức phổ biến nhất.
 
-## Các tầng trong bộ giao thức TCP/IP
+### Các tầng trong bộ giao thức TCP/IP
 
 Bộ giao thức TCP/IP chia giao thức vào các nhóm, mỗi nhóm được gọi là **một tầng**, có tổng 4 tầng:
 
@@ -114,7 +114,7 @@ Mặc dù có rất nhiều giao thức nhưng thực tế bộ giao thức TCP/
 
 Ngoài ra, giao thức IPv6 yêu cầu thêm **NDP**, **ICMPv6**, và **MLD**. Hầu hết các giao thức ở tầng giao vận và tầng mạng, các giao thức tầng ứng dụng không bắt buộc bởi chúng đi kèm với ứng dụng.
 
-## Cách thức hoạt động của giao thức
+### Cách thức hoạt động của giao thức
 
 Các ứng dụng có các giao thức khác nhau, và các giao thức này luôn đi kèm và được tích hợp thành một module của chương trình. Ví dụ, **HTTP** luôn đi kèm với hệ thống phần mềm web.
 
@@ -124,7 +124,7 @@ Tất cả các giao thức ở tầng giao vận và tầng liên mạng đều
 
 Các giao thức tầng liên kết có thể hoạt động cả ở trên phần cứng, điều mà các giao thức ở ba tầng còn lại không làm được. 
 
-## Vai trò của Port
+### Vai trò của Port
 
 Trên mỗi thiết bị đầu cuối, có rất nhiều tiến trình đồng thời khai thác các dịch vụ truyền thông do các giao thức TCP và UDP cung cấp. Do đó, khi dữ liệu đến đích thì cần một cơ chế để phân biệt dữ liệu dành cho tiến trình nào.
 
@@ -132,17 +132,17 @@ Trên mỗi thiết bị đầu cuối, có rất nhiều tiến trình đồng 
 
 Các tiến trình tham gia vào quá trình truyền thông phải thỏa thuận với nhau về giá trị port. Các giá trị port nguồn và port đích đều phải được gửi đi kèm theo gói tin TCP/UDP để các máy có thể xác định được cần chuyển gói tin đến cho tiến trình nào.
 
-### Một số điểm đáng chú ý về port:
+#### Một số điểm đáng chú ý về port:
 
 - Là một điểm kết nối logic trong mạng máy tính, nơi mà dữ liệu được gửi và nhận thông qua các giao thức mạng. Mỗi port được xác định bằng một số nguyên từ 0 -> 65535.
 - Vai trò của port là phân biệt các dịch vụ và quản lý kết nối.
 
-### Các loại Port:
+#### Các loại Port:
 
 1. **Well-known Ports (Cổng nổi tiếng)**: Có giá trị từ 0-1023, được dành riêng cho các dịch vụ hệ thống và giao thức chuẩn.
 2. **Registered Ports (Cổng đăng ký)**: Có giá trị từ 1024-49151, được đăng ký cho các ứng dụng cụ thể của các tổ chức và nhà phát triển.
 3. **Dynamic/Private Ports (Cổng động/riêng tư)**: Có giá trị từ 49152-65535, được gán động cho các ứng dụng cần thiết, thường là các kết nối tạm thời.
 
-### Cách hoạt động của port:
+#### Cách hoạt động của port:
 
 Khi một thiết bị muốn giao tiếp với một dịch vụ cụ thể trên mạng thì nó sẽ gửi dữ liệu đến một địa chỉ IP và một port cụ thể. Khi đó, trên nơi nhận được request sẽ lắng nghe và tiếp nhận các request trên port này.

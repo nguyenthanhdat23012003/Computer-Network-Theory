@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Computer Networks and Application Software
+## Computer Networks and Application Software
 
 Every network application is a system consisting of multiple programs running on different computers and exchanging information over a network.
 
@@ -19,7 +19,7 @@ In such applications, the **computer network** acts as the medium for the compon
 
 ---
 
-# Mạng máy tính và phần mềm ứng dụng
+## Mạng máy tính và phần mềm ứng dụng
 
 Mỗi phần mềm ứng dụng mạng là một hệ thống bao gồm nhiều chương trình chạy trên các máy tính khác nhau và trao đổi thông tin qua mạng.
 

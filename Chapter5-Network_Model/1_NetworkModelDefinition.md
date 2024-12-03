@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Concept of Network Models
+## Concept of Network Models
 
 A network model describes the architecture, components, and design used to establish communication between a source system and a destination system. Network models are also known as protocol stacks, protocol suites, or network stacks.
 
@@ -16,7 +16,7 @@ Entities at the same layer share common features regarding the services they pro
 
 
 
-## Interaction in Layered Architecture
+### Interaction in Layered Architecture
 
 Protocol programs at various layers interact like functions calling one another. Higher-level functions call lower-level functions to perform specific tasks; only functions in adjacent layers can directly call each other.
 
@@ -26,7 +26,7 @@ The concepts of **SDU (Service Data Unit)**, **PCI (Protocol Control Information
 
 ---
 
-# Khái niệm mô hình mạng
+## Khái niệm mô hình mạng
 
 Mô hình mạng mô tả kiến trúc, thành phần và thiết kế được sử dụng để thiết lập giao tiếp giữa hệ thống nguồn và hệ thống đích. Mô hình mạng còn được gọi với các tên khác như ngăn xếp giao thức, bộ giao thức, ngăn xếp mạng.
 
@@ -42,7 +42,7 @@ Các thực thể ở cùng tầng có những điểm chung về dịch vụ m�
 
 
 
-## Tương tác trong kiến trúc phân tầng
+### Tương tác trong kiến trúc phân tầng
 
 Các chương trình giao thức ở các tầng hoạt động giống như các hàm gọi lẫn nhau. Các hàm ở cấp độ cao hơn gọi các hàm ở cấp thấp hơn để làm nhiệm vụ cụ thể; chỉ các hàm ở các cấp liền kề nhau mới được gọi cho nhau.
 

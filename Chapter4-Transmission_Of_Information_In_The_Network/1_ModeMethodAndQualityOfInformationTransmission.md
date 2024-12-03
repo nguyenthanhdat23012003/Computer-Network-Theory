@@ -1,8 +1,8 @@
 **[Vietnamese Below]**
 
-# Modes, Methods, and Quality of Information Transmission
+## Modes, Methods, and Quality of Information Transmission
 
-## 1. Transmission Modes
+### 1. Transmission Modes
 
 Transmission modes describe the direction of information flow between two devices in a network. There are three primary modes:
 
@@ -14,7 +14,7 @@ Transmission modes describe the direction of information flow between two device
 
 
 
-## 2. Transmission Methods
+### 2. Transmission Methods
 
 Transmission methods describe the number of devices involved in the communication process. Key methods include:
 
@@ -26,7 +26,7 @@ Transmission methods describe the number of devices involved in the communicatio
 
 
 
-## 3. Collision and Collision Domain
+### 3. Collision and Collision Domain
 
 - **Signal Collision:** Occurs when signals from multiple sources interfere, causing communication failure.
 
@@ -36,7 +36,7 @@ Transmission methods describe the number of devices involved in the communicatio
 
 
 
-## 4. Quality of Information Transmission
+### 4. Quality of Information Transmission
 
 - **Bandwidth:** The maximum rate of data transmission over a link, typically measured in bps (bits per second).
 
@@ -60,9 +60,9 @@ These concepts are crucial for designing and optimizing network systems, ensurin
 
 ---
 
-# Chế độ, phương thức và chất lượng truyền thông tin
+## Chế độ, phương thức và chất lượng truyền thông tin
 
-## 1. Chế độ truyền thông tin (Transmission mode)
+### 1. Chế độ truyền thông tin (Transmission mode)
 
 Chế độ truyền thông tin thể hiện chiều truyền thông tin giữa hai thiết bị trong mạng. Có ba chế độ chính:
 
@@ -74,7 +74,7 @@ Chế độ truyền thông tin thể hiện chiều truyền thông tin giữa 
 
 
 
-## 2. Phương thức truyền thông tin (Transmission method)
+### 2. Phương thức truyền thông tin (Transmission method)
 
 Phương thức truyền thông tin mô tả số lượng thiết bị tham gia vào quá trình truyền thông tin. Các phương thức chính bao gồm:
 
@@ -86,7 +86,7 @@ Phương thức truyền thông tin mô tả số lượng thiết bị tham gia
 
 
 
-## 3. Xung đột và miền xung đột
+### 3. Xung đột và miền xung đột
 
 - **Xung đột tín hiệu:** Tình trạng tín hiệu đến từ nhiều nguồn “va chạm” nhau, dẫn đến việc truyền thông tin thất bại.
 
@@ -96,7 +96,7 @@ Phương thức truyền thông tin mô tả số lượng thiết bị tham gia
 
 
 
-## 4. Chất lượng truyền thông tin
+### 4. Chất lượng truyền thông tin
 
 - **Băng thông (Bandwidth):** Tốc độ truyền thông tin tối đa qua một đường liên kết, thường đo bằng bps (bit per second).
 

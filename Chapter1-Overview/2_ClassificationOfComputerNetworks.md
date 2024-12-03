@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Classification of Computer Networks
+## Classification of Computer Networks
 
 Computer networks can be classified based on various criteria. These criteria include: signal transmission medium, bandwidth, communication protocol, network scale, device connection topology, flow control mechanism, switching techniques, etc.
 
@@ -57,7 +57,7 @@ The most common classification is based on **network scale**. According to this 
 
 ---
 
-# Phân loại mạng máy tính
+## Phân loại mạng máy tính
 
 Mạng máy tính có thể phân loại theo nhiều tiêu chí khác nhau. Các tiêu chí phân loại mạng có thể là: môi trường truyền tín hiệu, băng thông, giao thức truyền thông, quy mô mạng, sơ đồ kết nối thiết bị, cơ chế kiểm soát luồng, kỹ thuật chuyển mạch, …
 

@@ -1,10 +1,10 @@
 **[Vietnamese Below]**
 
-# Base64
+## Base64
 
 **Base64** is a method for encoding data to be transmitted through systems that support only ASCII text characters. The Base64 algorithm encodes binary data into a text string that is safe and easy to transmit over protocols like email and HTTP.
 
-## How It Works
+### How It Works
 
 Base64 works by converting each group of 3 bytes (24 bits) of binary data into 4 encoded characters from the Base64 character set. The Base64 character set includes:
 
@@ -15,7 +15,7 @@ Base64 works by converting each group of 3 bytes (24 bits) of binary data into 4
 
 In total, the Base64 character set has 64 characters (hence the name Base64).
 
-### Encoding Process
+#### Encoding Process
 
 The Base64 encoding process involves the following steps:
 
@@ -35,7 +35,7 @@ The Base64 encoding process involves the following steps:
 4. **Add padding if necessary:**
    If the input bytes are not a multiple of 3, the output is padded with `=` characters to ensure the output length is a multiple of 4.
 
-### Encoding Example
+#### Encoding Example
 
 Encoding the string "Man" into Base64:
 
@@ -46,7 +46,7 @@ Encoding the string "Man" into Base64:
 - **Map to Base64:** TWFu
 - No `=` padding is needed since the input data is complete.
 
-### Decoding Process
+#### Decoding Process
 
 The Base64 decoding process reverses the encoding steps:
 
@@ -57,7 +57,7 @@ The Base64 decoding process reverses the encoding steps:
 
 The encoding and decoding processes are straightforward. For more information, see [here](https://en.wikipedia.org/wiki/Base64).
 
-## Applications of Base64
+### Applications of Base64
 
 Base64 is widely used in various applications, such as:
 
@@ -65,18 +65,18 @@ Base64 is widely used in various applications, such as:
 - **HTTP:** Transmitting binary data in URLs and JSON payloads.
 - **Data Storage and Transmission:** Ensuring binary data can be safely handled in text-only systems.
 
-## Conclusion
+### Conclusion
 
 Base64 is a simple yet effective algorithm for encoding binary data as ASCII text. Understanding how Base64 works allows you to apply it easily in data transmission and storage scenarios.
 
 
 ---
 
-# Base64
+## Base64
 
 **Base64** là một phương thức mã hóa dữ liệu để truyền tải qua các hệ thống mà chỉ hỗ trợ các ký tự văn bản ASCII. Thuật toán Base64 mã hóa dữ liệu nhị phân thành chuỗi văn bản an toàn và dễ dàng truyền tải qua các giao thức như email và HTTP.
 
-## Cách thức hoạt động
+### Cách thức hoạt động
 
 Base64 hoạt động bằng cách chuyển đổi mỗi nhóm 3 byte (24 bit) dữ liệu nhị phân thành 4 ký tự mã hóa từ bảng mã Base64. Bảng mã Base64 bao gồm các ký tự sau:
 
@@ -87,7 +87,7 @@ Base64 hoạt động bằng cách chuyển đổi mỗi nhóm 3 byte (24 bit) d
 
 Tổng cộng, bảng mã Base64 có 64 ký tự (do đó có tên là Base64).
 
-### Quá trình mã hóa
+#### Quá trình mã hóa
 
 Quá trình mã hóa Base64 diễn ra như sau:
 
@@ -108,7 +108,7 @@ Các giá trị 6-bit được ánh xạ đến bảng mã Base64. Ví dụ:
 4. **Bổ sung padding nếu cần thiết:** 
 Nếu số byte đầu vào không chia hết cho 3, thì kết quả sẽ được bổ sung thêm ký tự "=" để đảm bảo độ dài của chuỗi kết quả là bội số của 4.
 
-### Ví dụ mã hóa
+#### Ví dụ mã hóa
 
 Mã hóa chuỗi "Man" thành Base64:
 
@@ -119,7 +119,7 @@ Mã hóa chuỗi "Man" thành Base64:
 - **Ánh xạ đến Base64:** TWFu
 - Không cần bổ sung ký tự "=" vì dữ liệu đầy đủ.
 
-### Quá trình giải mã
+#### Quá trình giải mã
 
 Quá trình giải mã Base64 ngược lại với quá trình mã hóa:
 
@@ -130,7 +130,7 @@ Quá trình giải mã Base64 ngược lại với quá trình mã hóa:
 
 Quá trình mã hóa và giải mã rất đơn giản. Xem thêm [tại đây](https://en.wikipedia.org/wiki/Base64).
 
-## Ứng dụng của Base64
+### Ứng dụng của Base64
 
 Base64 được sử dụng rộng rãi trong nhiều ứng dụng, chẳng hạn:
 
@@ -138,7 +138,7 @@ Base64 được sử dụng rộng rãi trong nhiều ứng dụng, chẳng hạ
 - **HTTP:** Truyền tải dữ liệu nhị phân qua URL và JSON.
 - **Lưu trữ và truyền tải dữ liệu:** Đảm bảo dữ liệu nhị phân an toàn trong các hệ thống chỉ hỗ trợ văn bản.
 
-## Kết luận
+### Kết luận
 
 Base64 là một thuật toán mã hóa dữ liệu đơn giản nhưng rất hiệu quả để truyền tải dữ liệu nhị phân dưới dạng văn bản ASCII. Hiểu cách thức hoạt động của Base64 giúp bạn dễ dàng áp dụng nó trong các ứng dụng truyền tải và lưu trữ dữ liệu.
 

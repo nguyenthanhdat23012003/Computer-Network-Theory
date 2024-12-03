@@ -1,23 +1,23 @@
 **[Vietnamese Below]**
 
-# DNS (Domain Name System)
+## DNS (Domain Name System)
 
-## What is DNS?
+### What is DNS?
 DNS is the domain name system that translates domain names into IP addresses, enabling network devices to communicate with each other.
 
-## Why is DNS Needed?
+### Why is DNS Needed?
 - **Easier to Remember**: Domain names are easier to remember and use compared to IP addresses.
 - **Stability**: The IP addresses of servers may change, but domain names typically remain constant.
 - **Hierarchical and Centralized Management**: DNS organizes domain management hierarchically, from top-level domains (TLDs) to subdomains, simplifying the management and maintenance of the global domain name system.
 
-## DNS System Design
+### DNS System Design
 The DNS system includes several types of servers, each with a specific role in resolving domain names:
 - **DNS Resolver (Recursive Resolver)**: Found at ISPs or public DNS services (e.g., Google, Cloudflare), these servers receive domain resolution requests from user devices and query other DNS servers to find the corresponding IP address.
 - **Root Name Server**: There are 13 root server clusters, each with multiple replicas worldwide. They direct DNS resolvers to the appropriate TLD name servers based on domain extensions such as .com, .net, .org, etc.
 - **TLD Name Server**: Located globally and managed by organizations responsible for specific TLDs, these servers direct DNS resolvers to the authoritative name servers of specific domains (e.g., example.com).
 - **Authoritative Name Server**: Managed by companies or organizations that own the domains, these servers provide accurate DNS records (A, AAAA, MX, CNAME, TXT, etc.) for the domains they control.
 
-## DNS Name Resolution Process
+### DNS Name Resolution Process
 1. The client enters a domain name in the browser.
 2. The browser checks its cache for the IP address corresponding to the domain name. If found, it uses that IP to connect directly; otherwise, it proceeds to the next step.
 3. The operating system’s cache is checked for the IP address. If found, it connects directly; otherwise, the next step follows.
@@ -31,7 +31,7 @@ The DNS system includes several types of servers, each with a specific role in r
 11. The DNS resolver caches the IP and sends it to the browser, which also caches the IP in the OS and browser caches.
 12. The Authoritative Name Server stores detailed DNS records for each specific domain.
 
-## Types of DNS Records and Their Functions
+### Types of DNS Records and Their Functions
 - **A Record (Address Record)**:
   - **Function**: Maps a domain name to an IPv4 address.
   - **Example**: example.com -> 192.0.2.1.
@@ -77,24 +77,24 @@ Use the command `dig -t [record_type] [domain_name]` to check record information
 
 ---
 
-# DNS (Domain Name System)
+## DNS (Domain Name System)
 
-## DNS là gì?
+### DNS là gì?
 DNS là hệ thống phân giải tên miền, cho phép chuyển đổi tên miền thành địa chỉ IP để các thiết bị mạng có thể giao tiếp với nhau.
 
-## Tại sao cần DNS?
+### Tại sao cần DNS?
 - **Dễ nhớ hơn**: Tên miền dễ nhớ và dễ sử dụng hơn địa chỉ IP.
 - **Ổn định**: Địa chỉ IP của các máy thường sẽ có thể thay đổi, còn tên miền thì thường không đổi.
 - **Phân cấp và Quản lý Tập trung**: DNS phân cấp quản lý tên miền, từ các tên miền cấp cao nhất (TLD) xuống các tên miền cấp dưới, giúp dễ dàng quản lý và duy trì hệ thống tên miền toàn cầu.
 
-## Thiết kế hệ thống DNS
+### Thiết kế hệ thống DNS
 Hệ thống DNS bao gồm nhiều loại máy chủ, mỗi loại đảm nhận một vai trò cụ thể trong quá trình phân giải tên miền:
 - **DNS Resolver (Recursive Resolver)**: Nằm ở những nhà cung cấp dịch vụ Internet (ISP), hoặc có thể là những DNS Resolver công cộng như của Google, Cloudflare, …, có chức năng nhận yêu cầu phân giải tên miền từ các thiết bị người dùng và thực hiện truy vấn qua các DNS server khác để tìm ra địa chỉ IP tương ứng.
 - **Root Name Server**: Có 13 cụm máy chủ gốc, mỗi cụm có nhiều bản sao khác nhau được đặt tại các vị trí khác nhau trên toàn cầu, có chức năng hướng dẫn các DNS Resolver tới được các TLD Name Server tương ứng với phần mở rộng tên miền như .com, .net, .org, …
 - **TLD Name Server**: Đặt tại nhiều địa điểm trên toàn cầu, thường được quản lý bởi các tổ chức chịu trách nhiệm về từng TLD cụ thể, có chức năng hướng dẫn các DNS Resolver tới được các Authoritative Name Server của tên miền cụ thể (ví dụ như example.com).
 - **Authoritative Name Server**: Được quản lý bởi các công ty hoặc tổ chức sở hữu tên miền. Chúng có thể được đặt tại các trung tâm dữ liệu hoặc thông qua các dịch vụ DNS như Cloudflare, AWS Route 53. Có chức năng cung cấp thông tin chính xác về các bản ghi DNS (A, AAAA, MX, CNAME, TXT, v.v.) cho tên miền mà chúng quản lý.
 
-## Quá trình phân giải tên miền DNS
+### Quá trình phân giải tên miền DNS
 1. Client nhập tên miền vào trình duyệt.
 2. Trình duyệt kiểm tra xem trong cache của nó có lưu IP ứng với tên miền đó không. Nếu có, thì dùng IP đó để kết nối đến IP của domain đó luôn. Nếu không, thì đến bước tiếp theo.
 3. Trình duyệt kiểm tra xem trong cache của hệ điều hành có IP ứng với tên miền đó không. Nếu có, thì dùng IP đó để kết nối đến IP của domain đó luôn. Nếu không, thì đến bước tiếp theo.
@@ -112,7 +112,7 @@ Hệ thống DNS bao gồm nhiều loại máy chủ, mỗi loại đảm nhận
   <img src="../image/Chapter6/DNS.png" alt="DNS">
 </p>
 
-## Các loại bản ghi DNS và chức năng của chúng
+### Các loại bản ghi DNS và chức năng của chúng
 - **A Record (Address Record)**:
   - **Chức năng**: Ánh xạ một tên miền tới một địa chỉ IPv4.
   - **Ví dụ**: example.com -> 192.0.2.1.

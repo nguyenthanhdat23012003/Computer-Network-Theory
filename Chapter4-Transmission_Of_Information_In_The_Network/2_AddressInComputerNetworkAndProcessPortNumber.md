@@ -1,10 +1,10 @@
 **[Vietnamese Below]**
 
-# Addresses in Computer Networks and Process Ports
+## Addresses in Computer Networks and Process Ports
 
 In computer networks, multiple protocols operate simultaneously. Each protocol requires a method to identify its counterpart on the source and destination machines. To achieve this, protocols use an addressing mechanism.
 
-## 1. Types of Addresses in Networks
+### 1. Types of Addresses in Networks
 
 Depending on the protocol, various addressing mechanisms are used:
 
@@ -22,13 +22,13 @@ Each address type has a specific configuration method:
 
 
 
-## 2. Port Numbers and Processes
+### 2. Port Numbers and Processes
 
 On each terminal equipment, multiple processes may simultaneously utilize communication services provided by TCP or UDP. When data reaches its destination, TCP and UDP require a mechanism to distinguish which process the data is intended for.
 
 To identify the process using the service, each process is assigned a unique number called a **port**. A port is a type of address used by applications to utilize end-to-end communication services provided by TCP or UDP.
 
-### Key Points About Ports:
+#### Key Points About Ports:
 
 - A port for a service cannot be shared by two processes.
   
@@ -42,11 +42,11 @@ These concepts are critical for ensuring effective communication between process
 
 ---
 
-# Địa chỉ trong mạng máy tính và số cổng tiến trình
+## Địa chỉ trong mạng máy tính và số cổng tiến trình
 
 Trong mạng máy tính, có nhiều giao thức hoạt động đồng thời. Mỗi giao thức yêu cầu một cách xác định đối tác trên máy nguồn và máy đích. Để đạt được mục đích này, các giao thức sử dụng cơ chế đánh địa chỉ.
 
-## 1. Các loại địa chỉ trong mạng
+### 1. Các loại địa chỉ trong mạng
 
 Tùy thuộc vào giao thức, có các cơ chế đánh địa chỉ khác nhau:
 
@@ -64,13 +64,13 @@ Mỗi loại địa chỉ có cách thức cấu hình riêng:
 
 
 
-## 2. Số cổng và tiến trình
+### 2. Số cổng và tiến trình
 
 Trên mỗi thiết bị đầu cuối, nhiều tiến trình có thể đồng thời khai thác các dịch vụ truyền thông do TCP hoặc UDP cung cấp. Khi dữ liệu đến đích, TCP và UDP cần một cơ chế để phân biệt dữ liệu đó dành cho tiến trình nào.
 
 Để xác định tiến trình nào đang khai thác dịch vụ, mỗi tiến trình được đánh một số không trùng lặp, gọi là **port**. Một port là loại địa chỉ dành cho các ứng dụng khai thác dịch vụ truyền thông end-to-end do TCP hoặc UDP cung cấp.
 
-### Một số điểm lưu ý về port:
+#### Một số điểm lưu ý về port:
 
 - Một port của một dịch vụ không thể được cấp cho hai tiến trình.
   

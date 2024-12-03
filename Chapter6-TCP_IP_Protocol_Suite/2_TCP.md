@@ -1,34 +1,34 @@
 **[Vietnamese Below]**
 
-# TCP Protocol (Transmission Control Protocol)
+## TCP Protocol (Transmission Control Protocol)
 
 TCP (Transmission Control Protocol) is one of the core protocols of the TCP/IP suite, designed to provide a reliable connection between computers in a network. TCP ensures data is transmitted intact and in the correct order.
 
-## Key Roles of TCP
+### Key Roles of TCP
 - **Reliable Data Transmission:** TCP ensures that packets are received in the correct order without loss.
 - **Flow Control:** TCP manages traffic to avoid network congestion.
 - **Error Control:** TCP uses checksum mechanisms to detect errors during data transmission.
 - **Connection Establishment and Management:** TCP establishes, maintains, and terminates connections between computers.
 
-## How TCP Works
+### How TCP Works
 TCP operates based on a connection-oriented mechanism. Below are the main steps in TCP's operation:
 
-### 1. **Connection Establishment (Three-Way Handshake):**
+#### 1. **Connection Establishment (Three-Way Handshake):**
    - **SYN:** Computer A sends a SYN (synchronize) packet to Computer B.
    - **SYN-ACK:** Computer B receives the SYN and responds with a SYN-ACK (synchronize-acknowledge) packet.
    - **ACK:** Computer A receives the SYN-ACK and responds with an ACK (acknowledge) packet. The connection is established.
 
-### 2. **Data Transmission:**
+#### 2. **Data Transmission:**
    - Data is split into smaller packets, each with a sequence number to ensure correct order at the destination.
    - Each received packet is acknowledged by an ACK packet from the recipient.
    - If the sender does not receive an ACK within a specified timeout, it resends the packet.
 
-### 3. **Connection Termination:**
+#### 3. **Connection Termination:**
    - Computer A sends a FIN (finish) packet to request connection termination.
    - Computer B acknowledges the FIN with an ACK and sends a FIN packet in return.
    - Computer A sends a final ACK to confirm receipt of the FIN from Computer B. The connection is terminated.
 
-## TCP Packet Structure
+### TCP Packet Structure
 A TCP packet consists of multiple fields, with key fields including:
 - **Source Port (16 bits):** Port number of the source.
 - **Destination Port (16 bits):** Port number of the destination.
@@ -46,23 +46,23 @@ A TCP packet consists of multiple fields, with key fields including:
   <img src="../image/Chapter6/TCP_Header.png" alt="TCP_Header">
 </p>
 
-## Advantages and Disadvantages of TCP
-### Advantages:
+### Advantages and Disadvantages of TCP
+#### Advantages:
 - **Reliability:** Ensures data is transmitted intact and in order.
 - **Error Control:** Detects and handles errors during transmission.
 - **Flow Control:** Adjusts data flow to avoid network congestion.
 - **Stateful Connection:** Establishes and maintains a connection between computers.
 
-### Disadvantages:
+#### Disadvantages:
 - **Higher Latency:** Due to the need for packet acknowledgment and connection setup, TCP has higher latency compared to connectionless protocols like UDP.
 - **Complex Processing:** TCP requires more resources and has a more complex processing mechanism.
 - **Lower Efficiency for Some Applications:** For applications requiring fast data transfer without high reliability, TCP may not be the best choice.
 
-## Conclusion
+### Conclusion
 TCP is a robust and reliable protocol for data transmission over networks. While it has some limitations, its advantages in ensuring data integrity and order make it a popular choice for many network applications.
 
-## Detailed Example of TCP Process
-### Connection Establishment (TCP Handshake):
+### Detailed Example of TCP Process
+#### Connection Establishment (TCP Handshake):
 Assume we have an application that wants to send the message "Hello, World!" from Computer A to Computer B.
 
 1. **Step 1: SYN**
@@ -95,7 +95,7 @@ Assume we have an application that wants to send the message "Hello, World!" fro
 
 The three steps complete the TCP handshake, and the connection is ready for data transmission.
 
-### Data Transmission (TCP Data Transfer):
+#### Data Transmission (TCP Data Transfer):
 Assume Computer A wants to send the message "Hello, World!" to Computer B.
 
 1. **Step 1: Send Data**
@@ -117,7 +117,7 @@ Assume Computer A wants to send the message "Hello, World!" to Computer B.
      - ACK Number: 1013 (Data Sequence Number + Data Length, here 12 bytes)
      - ACK Flag: 1
 
-### Connection Termination (TCP Teardown):
+#### Connection Termination (TCP Teardown):
 After data transmission is complete, the TCP connection is closed using a four-step process.
 
 1. **Step 1: FIN**
@@ -162,17 +162,17 @@ After these steps, the TCP connection between Computer A and Computer B is termi
 
 ---
 
-# Giao thức TCP
+## Giao thức TCP
 
 TCP (Transmission Control Protocol) là một trong những giao thức cốt lõi của bộ giao thức TCP/IP, được thiết kế để cung cấp một kết nối đáng tin cậy giữa các máy tính trong mạng. TCP đảm bảo rằng dữ liệu được truyền tải nguyên vẹn và theo đúng thứ tự.
 
-## Vai trò chính của TCP
+### Vai trò chính của TCP
 - **Đảm bảo truyền tải dữ liệu tin cậy:** TCP bảo đảm rằng các gói tin được nhận theo đúng thứ tự và không bị mất mát.
 - **Kiểm soát luồng dữ liệu:** TCP quản lý lưu lượng để tránh quá tải mạng.
 - **Kiểm soát lỗi:** TCP sử dụng cơ chế kiểm tra lỗi (checksum) để phát hiện lỗi trong quá trình truyền dữ liệu.
 - **Thiết lập và quản lý kết nối:** TCP thiết lập, duy trì và đóng kết nối giữa các máy tính.
 
-## Cách hoạt động của TCP
+### Cách hoạt động của TCP
 TCP hoạt động dựa trên cơ chế kết nối (connection-oriented). Dưới đây là các bước chính trong quá trình hoạt động của TCP:
 
 1. **Thiết lập kết nối (Three-Way Handshake):**
@@ -190,7 +190,7 @@ TCP hoạt động dựa trên cơ chế kết nối (connection-oriented). Dư�
    - Máy B gửi lại một gói ACK để xác nhận nhận được gói FIN và gửi lại một gói FIN.
    - Máy A gửi một gói ACK cuối cùng để xác nhận nhận được gói FIN từ máy B. Kết nối được đóng.
 
-## Cấu trúc gói tin của TCP
+### Cấu trúc gói tin của TCP
 Một gói tin TCP bao gồm nhiều trường, trong đó các trường quan trọng bao gồm:
 - **Source Port (16 bit):** Cổng nguồn.
 - **Destination Port (16 bit):** Cổng đích.
@@ -208,7 +208,7 @@ Một gói tin TCP bao gồm nhiều trường, trong đó các trường quan t
   <img src="../image/Chapter6/TCP_Header.png" alt="TCP_Header">
 </p>
 
-## Ưu điểm và nhược điểm của TCP
+### Ưu điểm và nhược điểm của TCP
 - **Ưu điểm:**
   - **Đáng tin cậy:** Đảm bảo rằng dữ liệu được truyền tải nguyên vẹn và theo đúng thứ tự.
   - **Kiểm soát lỗi:** Phát hiện và xử lý lỗi trong quá trình truyền dữ liệu.
@@ -220,11 +220,11 @@ Một gói tin TCP bao gồm nhiều trường, trong đó các trường quan t
   - **Quá trình xử lý phức tạp:** TCP yêu cầu nhiều tài nguyên và quá trình xử lý phức tạp hơn.
   - **Hiệu suất kém hơn trong một số ứng dụng:** Đối với các ứng dụng yêu cầu truyền dữ liệu nhanh và không cần độ tin cậy cao, TCP có thể không phải là lựa chọn tốt nhất.
 
-## Kết luận
+### Kết luận
 TCP là một giao thức mạnh mẽ và đáng tin cậy cho việc truyền dữ liệu qua mạng. Mặc dù có một số hạn chế, nhưng ưu điểm của TCP trong việc đảm bảo dữ liệu được truyền tải nguyên vẹn và theo đúng thứ tự khiến nó trở thành lựa chọn phổ biến cho nhiều ứng dụng mạng.
 
-## Ví dụ chi tiết về quy trình TCP
-### Thiết lập kết nối (TCP Handshake):
+### Ví dụ chi tiết về quy trình TCP
+#### Thiết lập kết nối (TCP Handshake):
 Giả sử chúng ta có một ứng dụng muốn gửi thông điệp "Hello, World!" từ máy tính A đến máy tính B.
 
 1. **Bước 1: SYN**
@@ -257,7 +257,7 @@ Giả sử chúng ta có một ứng dụng muốn gửi thông điệp "Hello, 
 
 Sau khi hoàn tất ba bước này, kết nối TCP được thiết lập và sẵn sàng truyền dữ liệu.
 
-### Truyền Dữ Liệu (TCP Data Transfer):
+#### Truyền Dữ Liệu (TCP Data Transfer):
 Giả sử Máy A muốn gửi thông điệp "Hello, World!" đến Máy B.
 
 1. **Bước 1: Gửi Dữ Liệu**
@@ -279,7 +279,7 @@ Giả sử Máy A muốn gửi thông điệp "Hello, World!" đến Máy B.
      - ACK Number: 1013 (Số sequence của gói dữ liệu + kích thước dữ liệu, ở đây là 12 byte)
      - ACK Flag: 1
 
-### Đóng Kết Nối (TCP Teardown):
+#### Đóng Kết Nối (TCP Teardown):
 Sau khi truyền dữ liệu xong, kết nối TCP cần được đóng lại bằng quy trình bốn bước.
 
 1. **Bước 1: FIN**

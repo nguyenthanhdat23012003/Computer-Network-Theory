@@ -1,8 +1,8 @@
 **[Vietnamese Below]**
 
-# Network Hardware Connection
+## Network Hardware Connection
 
-## Network Interface Card (NIC)
+### Network Interface Card (NIC)
 
 - **Other Names**: A Network Interface Card (NIC) enables an end device to connect to the transmission medium.
 - On end devices, NICs can be integrated into the motherboard, connected through **PCI** (Peripheral Component Interconnect - a standard interface for connecting peripheral devices to the motherboard), or via **USB** (Universal Serial Bus).
@@ -12,12 +12,12 @@
   - A frame is the closest data format to physical signals (bits of the frame are directly converted to and from physical signals).
 - **Signal Types** processed by NICs include electrical, optical, and radio signals, depending on the transmission medium. Typically, a single NIC connects to one medium.
 
-### NIC Functions
+#### NIC Functions
 - Transmitting data to the network: converts the byte stream of the frame into signals and sends them over the transmission medium.
 - Receiving signals from the medium and converting them into a frame byte stream for further processing on the end device or network equipment.
 - Managing data flow between the computer and the transmission medium.
 
-### MAC Address
+#### MAC Address
 - Each NIC has a unique address called the **MAC Address** (Media Access Control), stored in the NIC's ROM.
 - **MAC Address** is a 48-bit (6-byte) number represented in hexadecimal and divided into two parts:
   - **OUI** (Organizationally Unique Identifier): The first 24 bits (first 6 digits) identify the NIC manufacturer or supplier.
@@ -26,7 +26,7 @@
 - When a computer boots, the MAC address is loaded into RAM for use by network protocols to determine whether a network packet is intended for the device.
 - MAC addresses for both the sender and receiver are included in the frame's byte stream and used by devices like bridges or switches.
 
-## Twisted-Pair Cable Connection
+### Twisted-Pair Cable Connection
 
 - To connect twisted-pair cables to network devices or NICs on end devices, **RJ45 connectors and ports** are used.
   - **RJ45 Connector**: A standardized plug for the cable.
@@ -46,7 +46,7 @@
   - If the ends follow different standards: called a **crossover cable**.
   - **Straight-through cables** connect devices of different types, while **crossover cables** connect devices of the same type.
 
-## Wireless Connection
+### Wireless Connection
 
 - Wireless connections occur between end devices and a network device called a **Wireless Access Point**.
 - A **wireless-capable NIC** is required, installed in the PCI slot on the motherboard or via USB, along with specific driver software.
@@ -54,9 +54,9 @@
 
 ---
 
-# Kết nối phần cứng mạng
+## Kết nối phần cứng mạng
 
-## Card mạng
+### Card mạng
 
 - **Tên gọi khác**: Network Interface Card (NIC) là thiết bị cho phép kết nối thiết bị đầu cuối với môi trường truyền dẫn.
 - Trên thiết bị đầu cuối, NIC có thể được tích hợp sẵn trên bo mạch chính, kết nối qua khe mở rộng **PCI** (Peripheral Component Interconnect - chuẩn giao tiếp để kết nối các thiết bị ngoại vi với bo mạch chủ của máy tính) hoặc qua cổng **USB** (Universal Serial Bus).
@@ -66,12 +66,12 @@
   - Frame là dạng dữ liệu số gần sát nhất với tín hiệu vật lý (các bit của frame chuyển đổi trực tiếp sang tín hiệu vật lý và ngược lại).
 - **Loại tín hiệu** mà card mạng làm việc bao gồm tín hiệu điện, quang, và sóng vô tuyến, giao diện kết nối phụ thuộc vào môi trường truyền. Thông thường, mỗi NIC chỉ kết nối với một môi trường.
 
-### Chức năng của Card mạng
+#### Chức năng của Card mạng
 - Chuyển dữ liệu lên mạng: chuyển chuỗi byte của frame thành tín hiệu rồi đưa lên môi trường truyền.
 - Thu tín hiệu từ môi trường truyền và chuyển tín hiệu thành chuỗi byte frame để xử lý trên thiết bị đầu cuối hoặc thiết bị mạng.
 - Kiểm soát luồng dữ liệu giữa máy tính và môi trường truyền.
 
-### Địa chỉ MAC
+#### Địa chỉ MAC
 - Mỗi card mạng có một địa chỉ duy nhất gọi là địa chỉ vật lý hoặc **địa chỉ MAC** (Media Access Control), được gán vào ROM của NIC.
 - **Địa chỉ MAC** là một số nguyên 48 bit (6 byte), biểu diễn bằng 12 chữ số hexa và được chia thành hai phần:
   - **OUI** (Organizationally Unique Identifier): 24 bit đầu (6 chữ số đầu) xác định nhà sản xuất hoặc nhà cung cấp của NIC.
@@ -80,7 +80,7 @@
 - Khi máy tính khởi động, địa chỉ MAC được tải vào RAM để các giao thức sử dụng, nhằm xác định xem một gói tin trên mạng có dành cho mình hay không để xử lý hoặc loại bỏ.
 - Địa chỉ MAC của thiết bị gửi và nhận cũng nằm trong chuỗi byte của frame dữ liệu và được các thiết bị như bridge hoặc switch sử dụng.
 
-## Kết nối cáp xoắn
+### Kết nối cáp xoắn
 
 - Để kết nối cáp xoắn với thiết bị mạng hoặc với card mạng của thiết bị đầu cuối, sử dụng **đầu kết nối và cổng RJ45**.
   - **Đầu kết nối RJ45**: chuẩn quốc tế để gắn vào cáp.
@@ -100,7 +100,7 @@
   - Hai đầu khác chuẩn: gọi là **cáp chéo**.
   - **Cáp thẳng** dùng để nối các thiết bị khác loại, **cáp chéo** dùng để nối các thiết bị cùng loại.
 
-## Kết nối không dây
+### Kết nối không dây
 
 - Kết nối không dây được thực hiện giữa thiết bị đầu cuối với một thiết bị mạng gọi là **điểm truy cập không dây** (Wireless Access Point).
 - Cần có một **card mạng hỗ trợ kết nối không dây** được gắn vào khe mở rộng PCI trên mainboard hoặc qua cổng USB, cùng phần mềm điều khiển (driver) riêng.

@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# OSI (Open System Interconnection) Model
+## OSI (Open System Interconnection) Model
 
 The OSI model is an ISO standard that encompasses all aspects of network communication, enabling any two systems to communicate without concern for the underlying architecture. Proprietary protocols from specific manufacturers often prevent communication between systems of different types. The OSI model was developed to ensure interoperability between any two systems.
 
@@ -36,9 +36,9 @@ The OSI model is not a protocol but a framework for recognizing and designing a 
 
 
 
-## Data Flow Through OSI Layers
+### Data Flow Through OSI Layers
 
-### When Data is Sent From a Device:
+#### When Data is Sent From a Device:
 
 **From Top to Bottom:**
 1. **Layer 7 (Application):** Data is generated and prepared for transmission.
@@ -60,7 +60,7 @@ The OSI model is not a protocol but a framework for recognizing and designing a 
 
 ---
 
-# Mô hình kết nối các hệ thống mở OSI
+## Mô hình kết nối các hệ thống mở OSI
 
 Là một trong các chuẩn ISO bao hàm mọi mặt về truyền thông mạng, cho phép bất cứ hai hệ thống nào có thể truyền thông với nhau mà không cần quan tâm đến kiến trúc bên dưới của chúng. Các giao thức riêng của một hãng sản xuất thường ngăn ngừa việc truyền thông giữa hai hệ thống không cùng một kiểu -> mô hình OSI ra đời để hai hệ thống bất kỳ có thể giao tiếp với nhau.
 
@@ -96,9 +96,9 @@ Mô hình OSI không phải một giao thức, nó là một mô hình để nh�
 
 
 
-## Luồng đi của dữ liệu qua các tầng trong mô hình OSI
+### Luồng đi của dữ liệu qua các tầng trong mô hình OSI
 
-### Khi dữ liệu được gửi từ một thiết bị:
+#### Khi dữ liệu được gửi từ một thiết bị:
 
 **Từ trên xuống dưới:**
 1. **Tầng 7 (Application):** Dữ liệu được tạo ra và chuẩn bị gửi đi.

@@ -1,12 +1,12 @@
 **[Vietnamese Below]**
 
-# TCP/IP Model
+## TCP/IP Model
 
 The TCP/IP model is a reference model and conceptual framework for the suite of protocols collectively known as the TCP/IP protocol suite. It serves as the foundation for modern Internet functionality. Named after its two core protocols, TCP and IP, the model is structured into layers: Link Layer, Internet Layer, Transport Layer, and Application Layer.
 
 
 
-## Layers of the TCP/IP Model
+### Layers of the TCP/IP Model
 
 1. **Application Layer:**
    - Handles user data. Protocols in this layer use one of the two transport layer protocols to deliver information to the endpoint. Common protocols include Telnet, FTP, DNS, SMTP, SNMP, TFTP, NFS, and DHCP.
@@ -22,7 +22,7 @@ The TCP/IP model is a reference model and conceptual framework for the suite of 
 
 
 
-## Comparison of OSI and TCP/IP Models
+### Comparison of OSI and TCP/IP Models
 
 Both models have similarities in their layered structure, roles, and functions. 
 
@@ -35,13 +35,13 @@ Both models have similarities in their layered structure, roles, and functions.
 
 ---
 
-# Mô hình TCP/IP
+## Mô hình TCP/IP
 
 Là một mô hình tham chiếu, bản mô hình hóa của tập hợp các giao thức, thường gọi là bộ giao thức TCP/IP, đóng vai trò nền tảng trong hoạt động Internet ngày nay. Được đặt tên theo hai giao thức nòng cốt của nó là TCP và IP, được thiết kế dựa theo kiến trúc phân tầng bao gồm các tầng: Tầng liên kết, tầng liên mạng, tầng giao vận và tầng ứng dụng.
 
 
 
-## Các Tầng trong Mô hình TCP/IP
+### Các Tầng trong Mô hình TCP/IP
 
 1. **Tầng ứng dụng:**
    - Làm việc với dữ liệu người dùng, các giao thức thuộc tầng này sẽ sử dụng một trong hai giao thức của tầng giao vận để truyền thông tin đến điểm cuối. Các giao thức thường gặp là: telnet, FTP, DNS, SMTP, SNMP, TFTP, NFS, DHCP.
@@ -57,7 +57,7 @@ Là một mô hình tham chiếu, bản mô hình hóa của tập hợp các gi
 
 
 
-## So sánh OSI và TCP/IP
+### So sánh OSI và TCP/IP
 
 Hai mô hình thực tế có sự tương đồng và cả vai trò nhiệm vụ cũng như tên gọi của các tầng. 
 

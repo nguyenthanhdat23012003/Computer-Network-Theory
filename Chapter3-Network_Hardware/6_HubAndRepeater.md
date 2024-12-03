@@ -1,6 +1,6 @@
 **[Vietnamese Below]**
 
-# Hub and Repeater
+## Hub and Repeater
 
 ### Repeater (Signal Amplifier)
 - A **Repeater** is a LAN device used to regenerate and amplify signals. Since signals degrade over long distances, a repeater ensures stable signal transmission over extended paths.
@@ -33,7 +33,7 @@
 
 ---
 
-# Hub và Repeater
+## Hub và Repeater
 
 ### Repeater (Bộ lặp tín hiệu)
 - **Repeater** là thiết bị mạng LAN dùng để tái tạo và khuếch đại tín hiệu. Do tín hiệu truyền đi ở khoảng cách lớn có thể bị suy hao, repeater giúp đảm bảo tín hiệu được duy trì ổn định trên đường truyền dài.

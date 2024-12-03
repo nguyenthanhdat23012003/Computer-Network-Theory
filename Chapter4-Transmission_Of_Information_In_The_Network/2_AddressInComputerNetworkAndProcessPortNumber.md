@@ -24,7 +24,7 @@ Each address type has a specific configuration method:
 
 ## 2. Port Numbers and Processes
 
-On each end device, multiple processes may simultaneously utilize communication services provided by TCP or UDP. When data reaches its destination, TCP and UDP require a mechanism to distinguish which process the data is intended for.
+On each terminal equipment, multiple processes may simultaneously utilize communication services provided by TCP or UDP. When data reaches its destination, TCP and UDP require a mechanism to distinguish which process the data is intended for.
 
 To identify the process using the service, each process is assigned a unique number called a **port**. A port is a type of address used by applications to utilize end-to-end communication services provided by TCP or UDP.
 

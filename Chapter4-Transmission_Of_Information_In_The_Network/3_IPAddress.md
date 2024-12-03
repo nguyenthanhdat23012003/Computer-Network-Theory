@@ -1,8 +1,8 @@
 **[Vietnamese Below]**
 
-# Logical Address of Terminal Devices - IP Address
+# Logical Address of Terminal Equipments - IP Address
 
-In a computer network, there are usually multiple terminal devices operating simultaneously. Each terminal device is a node of the network and is referred to as a **host**. To differentiate between devices, each host is assigned a unique address, known as the **IP address**.
+In a computer network, there are usually multiple terminal equipments operating simultaneously. Each terminal equipment is a node of the network and is referred to as a **host**. To differentiate between devices, each host is assigned a unique address, known as the **IP address**.
 
 ## 1. IP Address (IPv4)
 
@@ -39,7 +39,7 @@ A broadcast address is used to send data simultaneously to all hosts within the 
 
 ## 3. Loopback Address
 
-The **127.x.x.x** address is the **loopback** or **localhost** address, used for communication testing without sending data onto the network (e.g., when the client and server are on the same terminal device).
+The **127.x.x.x** address is the **loopback** or **localhost** address, used for communication testing without sending data onto the network (e.g., when the client and server are on the same terminal equipment).
 
 ## 4. Automatic Private IP Address
 

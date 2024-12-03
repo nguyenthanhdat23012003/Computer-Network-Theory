@@ -25,7 +25,7 @@ For scenarios requiring a MAC address:
 - The source MAC address is obtained directly from the network card.
 - The destination MAC address is automatically obtained from the destination IP address using the ARP protocol.
 
-Terminal devices have two types of addresses simultaneously: a logical IP address and a physical MAC address. The IP address enables host-to-host communication across different networks, while the MAC address enables the transmission of data frames within a single LAN (within the same broadcast domain).
+Terminal equipments have two types of addresses simultaneously: a logical IP address and a physical MAC address. The IP address enables host-to-host communication across different networks, while the MAC address enables the transmission of data frames within a single LAN (within the same broadcast domain).
 
 ## ARP Protocol
 

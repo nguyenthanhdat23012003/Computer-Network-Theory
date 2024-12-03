@@ -11,13 +11,13 @@ A system consisting of at least two computers connected to exchange information 
 - The components can interact and coordinate for a common task.
 
 ### A Computer Network Includes:
-- End devices, transmission media, network devices, and network protocols.
+- Terminal equipments, transmission media, network devices, and network protocols.
 
 ---
 
-### End Devices (I/O Devices)
+### Terminal Equipments (I/O Devices)
 - Any device capable of generating data for the user.
-- Connecting end devices occurs at two levels:
+- Connecting terminal equipments occurs at two levels:
   - **Physical Connection**: Established through transmission media and network devices.
   - **Logical Connection**: Established through network protocols.
 
@@ -34,17 +34,17 @@ A system consisting of at least two computers connected to exchange information 
 ---
 
 ### Network Devices
-- Common computers placed along the path of information, performing various roles: connecting end devices to the medium and to each other, or connecting networks together.
+- Common computers placed along the path of information, performing various roles: connecting terminal equipments to the medium and to each other, or connecting networks together.
 - The main purpose of network devices is to expand the network.
 
-#### Differentiating Network Devices and End Devices:
+#### Differentiating Network Devices and Terminal Equipments:
 - Network devices are not the source or destination of information. They only relay information and do not allow user applications to be installed.
 
 #### Common Network Devices:
-- **Hub, repeater, switch, bridge**: Connect end devices into a small network area (LAN).
+- **Hub, repeater, switch, bridge**: Connect terminal equipments into a small network area (LAN).
 - **Router**: Connects distinct networks into a larger network.
 - **Modem**: Converts signals from one form to another.
-- **Access Point**: Connects end devices to a network without wires.
+- **Access Point**: Connects terminal equipments to a network without wires.
 - **Firewall**: Protects the network.
 
 ---

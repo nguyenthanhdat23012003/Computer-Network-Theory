@@ -4,8 +4,8 @@
 
 ## Network Interface Card (NIC)
 
-- **Other Names**: A Network Interface Card (NIC) enables an end device to connect to the transmission medium.
-- On end devices, NICs can be integrated into the motherboard, connected through **PCI** (Peripheral Component Interconnect - a standard interface for connecting peripheral devices to the motherboard), or via **USB** (Universal Serial Bus).
+- **Other Names**: A Network Interface Card (NIC) enables an terminal equipment to connect to the transmission medium.
+- On terminal equipments, NICs can be integrated into the motherboard, connected through **PCI** (Peripheral Component Interconnect - a standard interface for connecting peripheral devices to the motherboard), or via **USB** (Universal Serial Bus).
 - Each NIC includes network protocols for data exchange, operating on the NIC hardware.
 - **Data Unit** processed by NICs is the frame, consisting of:
   - **Frame** = Frame header + Payload (from IP layer).
@@ -14,7 +14,7 @@
 
 ### NIC Functions
 - Transmitting data to the network: converts the byte stream of the frame into signals and sends them over the transmission medium.
-- Receiving signals from the medium and converting them into a frame byte stream for further processing on the end device or network equipment.
+- Receiving signals from the medium and converting them into a frame byte stream for further processing on the terminal equipment or network equipment.
 - Managing data flow between the computer and the transmission medium.
 
 ### MAC Address
@@ -28,7 +28,7 @@
 
 ## Twisted-Pair Cable Connection
 
-- To connect twisted-pair cables to network devices or NICs on end devices, **RJ45 connectors and ports** are used.
+- To connect twisted-pair cables to network devices or NICs on terminal equipments, **RJ45 connectors and ports** are used.
   - **RJ45 Connector**: A standardized plug for the cable.
   - **RJ45 Port**: The socket for connecting the RJ45 plug to a device.
 - **Wires** in twisted-pair cables are aligned with the RJ45 connector's copper contacts in a specific order, known as the wiring standard.
@@ -48,9 +48,9 @@
 
 ## Wireless Connection
 
-- Wireless connections occur between end devices and a network device called a **Wireless Access Point**.
+- Wireless connections occur between terminal equipments and a network device called a **Wireless Access Point**.
 - A **wireless-capable NIC** is required, installed in the PCI slot on the motherboard or via USB, along with specific driver software.
-- Multiple end devices can connect to a single wireless access point, forming a **hybrid wireless LAN**.
+- Multiple terminal equipments can connect to a single wireless access point, forming a **hybrid wireless LAN**.
 
 <div style="border-top: 2px solid white; margin: 20px 0;"></div>
 

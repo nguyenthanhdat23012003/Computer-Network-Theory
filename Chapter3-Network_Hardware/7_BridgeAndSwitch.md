@@ -23,7 +23,7 @@
 ### Switch
 - A **Switch** is a LAN device with multiple ports that forwards data frames between devices based on MAC addresses. It can be considered a **bridge with multiple RJ45 ports** or **a bridge + hub**.
 - Switches allow:
-  - Connecting multiple end devices and other network devices via cables (crossover cables for similar devices, straight-through cables for different devices).
+  - Connecting multiple terminal equipments and other network devices via cables (crossover cables for similar devices, straight-through cables for different devices).
   - Expanding a LAN to form a larger network.
   - When multiple switches are used, they are often housed in **rack cabinets** for protection and ventilation.
 - **How a Switch Works**:

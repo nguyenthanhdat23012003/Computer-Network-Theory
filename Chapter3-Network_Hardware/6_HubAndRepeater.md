@@ -8,7 +8,7 @@
 ### Hub (Signal Concentrator)
 - A **Hub** is a LAN device with multiple ports that allows connections to multiple devices, forwarding signals between all connected devices.
 - Each hub features multiple **RJ45 ports** for:
-  - Connecting to end devices via **straight-through cables**.
+  - Connecting to terminal equipments via **straight-through cables**.
   - Connecting to other hubs via **crossover cables**.
 - Hubs expand LANs in both range and the number of connected devices.
 - **How a Hub Works**:

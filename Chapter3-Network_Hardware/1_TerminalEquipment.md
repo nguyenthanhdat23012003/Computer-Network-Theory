@@ -2,13 +2,13 @@
 
 ### Terminal Equipment in Computer Networks
 
-Terminal equipment are essential components in computer networks, serving as the source or destination of user data. To operate in a network environment, an end device must ensure both hardware and software connectivity.
+Terminal equipment are essential components in computer networks, serving as the source or destination of user data. To operate in a network environment, an terminal equipment must ensure both hardware and software connectivity.
 
 #### 1. Physical Connection to the Network
 To establish a physical connection, terminal equipment use a **NIC (Network Interface Card)**, also known as a network card. This device enables computers or terminal equipment to connect to a network. A single device can have multiple NICs to connect to multiple networks simultaneously.
 
 #### 2. Logical Connection
-Logical connections between terminal equipment and the network are maintained through various protocols. To function within a network, an end device requires an operating system (OS) with integrated TCP/IP protocol support. All modern operating systems support the TCP/IP protocol suite, allowing efficient network participation.
+Logical connections between terminal equipment and the network are maintained through various protocols. To function within a network, an terminal equipment requires an operating system (OS) with integrated TCP/IP protocol support. All modern operating systems support the TCP/IP protocol suite, allowing efficient network participation.
 
 #### 3. IP Address
 In a network with multiple terminal equipment, each device, called a **node**, is assigned a unique address known as an **IP address**. This IP address helps identify and differentiate devices within the network.
